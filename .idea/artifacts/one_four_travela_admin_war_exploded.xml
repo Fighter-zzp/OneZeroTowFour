@@ -11,13 +11,13 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="one-four-travel-admin" />
+          <element id="module-output" name="one-four-travela-admin" />
         </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/one-four-travel-admin/target/one-four-travel-admin/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="one-four-travel-admin/web/Web" />
+      <element id="javaee-facet-resources" facet="one-four-travela-admin/web/Web" />
     </root>
   </artifact>
 </component>
