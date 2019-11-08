@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OneZeroTowFour.iml" filepath="$PROJECT_DIR$/OneZeroTowFour.iml" />
+      <module fileurl="file://$PROJECT_DIR$/one-four-travel-admin/one-four-travel-admin.iml" filepath="$PROJECT_DIR$/one-four-travel-admin/one-four-travel-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/one-four-travel-seller/one-four-travel-seller.iml" filepath="$PROJECT_DIR$/one-four-travel-seller/one-four-travel-seller.iml" />
       <module fileurl="file://$PROJECT_DIR$/one-four-travel-user/one-four-travel-user.iml" filepath="$PROJECT_DIR$/one-four-travel-user/one-four-travel-user.iml" />
-      <module fileurl="file://$PROJECT_DIR$/one-four-travel-admin/one-four-travela-admin.iml" filepath="$PROJECT_DIR$/one-four-travel-admin/one-four-travela-admin.iml" />
     </modules>
   </component>
 </project>

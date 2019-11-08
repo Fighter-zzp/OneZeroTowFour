@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="one-four-travel-admin" />
+        <module name="one-four-travel-seller" />
+        <module name="one-four-travel-user" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="one-four-travel-admin" target="11" />
+      <module name="one-four-travel-seller" target="11" />
+      <module name="one-four-travel-user" target="11" />
+      <module name="OneZeroTowFour" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

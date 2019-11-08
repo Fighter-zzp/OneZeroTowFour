@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="one-four-travel-user:war">
+    <output-path>$PROJECT_DIR$/one-four-travel-user/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>one-four-travel-user</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="one-four-travel-user.war">
+      <element id="artifact" artifact-name="one-four-travel-user:war exploded" />
+    </root>
+  </artifact>
+</component>
