@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.travel.one.four.dao.CompanyDao">
+
+    <select id="checkSname" resultType="java.lang.Integer">
+        SELECT * FROM t_companydata WHERE sname LIKE CONCAT('%',#{sname},'%')
+    </select>
+    <insert id="insertCompany">
+        INSERT INTO t_companydata (
+        `sname`,
+        `password`,
+        `email`,
+        `consphone`,
+        `address`
+        )
+        VALUES
+        (
+        #{sname},
+        #{password},
+        #{email},
+        #{consphone},
+        #{address}
+        )
+    </insert>
+    <select id="findAll" resultType="com.travel.one.four.domain.Company">
+        SELECT * FROM t_companydata
+    </select>
+</mapper>
