@@ -1,0 +1,24 @@
+#bs-example-navbar-collapse-1 ul li{
+    font-size: 1.5em;
+   /* margin-left: 40px;*/
+}
+#navbar-brand {
+    padding-left: 150px;
+}
+#navbar-brand img{
+    width: 150px;
+    height: 81px;
+    margin-left: 25px;
+}
+#index{
+    margin-left: 80px;
+    display: block;
+}
+.message{
+    font-size: medium;
+    color: #5e5e5e;
+}
+
+.menus{
+    margin-left: 40px;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.one.four.dao.IUserDao">
+    <select id="getList" resultType="user">
+        select username,password,sex,telephone,email from t_user where uid=7
+    </select>
+    <update id="setPassword" parameterType="user">
+      update t_user
+      set password=#{password}
+   </update>
+
+<select id="getCollect" resultType="route">
+    select rid,rname,price,routeIntroduce,rimage from t_route  /*where rid=1 or rid =2*/
+</select>
+</mapper>

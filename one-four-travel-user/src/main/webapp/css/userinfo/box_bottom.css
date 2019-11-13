@@ -1,0 +1,43 @@
+#two_box{
+    height: 356px;
+    width: 600px;
+    margin-left: 250px;
+    margin-top: 20px;
+    border: 1px solid darkred;
+
+}
+#three_box{
+    height: 256px;
+    width: 250px;
+    margin-left: 650px;
+    border: 1px solid blue;
+
+}
+
+#four_box {
+    height: 356px;
+    width: 250px;
+    margin-left: 650px;
+    border: 1px solid blue;
+    margin-top: 20px;
+
+}
+
+#five_box{
+    height:100px;
+    width:250px;
+    margin-left: 650px;
+    border: 1px solid blue;
+    margin-top: 20px;
+}
+
+#six_box{
+    height: 798px;
+    width: 600px;
+    margin-left: 250px;
+    margin-top: 20px;
+    border: 1px solid darkred;
+}
+#left-sidebar ul li{
+list-style: none;
+}

@@ -1,0 +1,42 @@
+#one_box{
+    height: 178px;
+    width: 900px;
+    margin-left: 250px;
+    margin-top: 1px;
+    border: 1px solid orangered;
+
+}
+
+.photo img{
+    height: 140px;
+    width:140px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#name{
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    margin-left: 30px;
+}
+/*？？？*/
+.msg {
+    color: #09A343;
+    padding-top: 50px;
+}
+#king{
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 300px;
+}
+
+#diamond{
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    /*
+    margin-left: 175px;
+    */
+}

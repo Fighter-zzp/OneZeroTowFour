@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人信息首页</title>
+    <script src="../plugins/jquery/js/jquery-3.3.1.js" ></script>
+    <script src="../js/user/onlineinfo.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.js"></script>
+    <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="../js/user/saveps.js"></script>
+
+    <style type="text/css">
+        #show_info{
+            width: 800px;
+            height: 160px;
+            position: absolute;
+            bottom:55%;
+            left:35%;
+
+        }
+        #show_info td{
+            font-size: 20px;
+        }
+        #show_info th{
+
+            width: 150px;
+        }
+        #img_set{
+            background-image: url("../images/mry.jpg");
+            background-size: 100% 100%;
+        }
+        /*  #modification_password{
+              position: absolute;
+              bottom:300px;
+              left:45%;
+
+          }*/
+        table{
+
+            height:300px;
+            text-align: center;
+        }
+        table th{
+            /* height:300px;*/
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="dd"></div>
+<div id="show_info">
+    <table class="table table-striped table-bordered table-hover table-condensed" id="online_table">
+
+    </table>
+   <!--<input type="button"  value="修改" id="modification_password">-->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+        按钮
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">修改密码</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="text_password">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" id="save_ps">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--结束-->
+</div>
+<a href="testgetindex.html"> dianwo </a>
+</body>
+</html>
