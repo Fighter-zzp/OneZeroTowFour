@@ -11,7 +11,7 @@
   </parent>
   <packaging>war</packaging>
 
-  <artifactId>one-four-travela-admin</artifactId>
+  <artifactId>one-four-trave-admin</artifactId>
   <name>one-four-travel-admin Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
@@ -171,6 +171,13 @@
       <artifactId>jackson-annotations</artifactId>
       <version>${jackson.version}</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-neo4j -->
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-neo4j</artifactId>
+      <version>5.2.0.RELEASE</version>
+    </dependency>
+
   </dependencies>
 
   <build>

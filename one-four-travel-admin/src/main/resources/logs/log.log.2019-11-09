@@ -1,0 +1,62 @@
+2019-11-09 14:30:37,084 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-11-09 14:30:37,147 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3315d2d7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@d6e7bab, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5fa07e12, org.springframework.test.context.support.DirtiesContextTestExecutionListener@55b53d44, org.springframework.test.context.transaction.TransactionalTestExecutionListener@482bce4f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@366647c2, org.springframework.test.context.event.EventPublishingTestExecutionListener@6a6afff2]
+2019-11-09 14:30:40,495 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-09 14:30:41,286 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-09 14:30:41,443 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-09 14:30:41,541 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-09 14:44:02,009 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-09 14:44:05,684 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 3674 ms
+2019-11-09 14:44:07,245 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-09 14:44:10,390 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 3145 ms
+2019-11-09 14:49:49,189 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-09 14:49:52,338 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 3149 ms
+2019-11-09 14:49:53,657 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-09 14:49:55,699 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 2042 ms
+2019-11-09 14:55:59,285 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-09 14:56:03,250 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 3965 ms
+2019-11-09 14:56:04,337 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-09 14:56:06,410 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 2070 ms
+2019-11-09 14:56:39,313 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-09 14:56:51,639 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-09 15:01:03,854 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-09 15:01:03,876 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-09 15:02:09,999 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-09 15:02:13,001 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 3001 ms
+2019-11-09 15:02:14,354 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-09 15:02:15,965 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1611 ms
+2019-11-09 15:02:35,900 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-09 15:02:36,403 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-09 15:04:02,602 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-09 15:04:02,622 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-09 15:04:44,378 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-09 15:04:47,367 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 2988 ms
+2019-11-09 15:04:48,710 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-09 15:04:50,211 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1500 ms
+2019-11-09 15:05:24,138 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-09 15:05:24,665 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-09 15:12:50,249 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-09 15:12:50,347 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-09 15:14:45,700 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-09 15:14:48,828 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 3128 ms
+2019-11-09 15:14:50,193 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-09 15:14:51,661 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1468 ms
+2019-11-09 15:15:23,801 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-09 15:15:24,457 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-09 15:27:11,275 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-09 15:27:11,302 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-09 16:01:12,843 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-09 16:01:16,622 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 3779 ms
+2019-11-09 16:01:18,298 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-09 16:01:20,167 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1869 ms
+2019-11-09 16:03:39,062 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-09 16:03:39,667 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-09 16:08:11,009 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-09 16:08:11,048 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-09 16:41:04,988 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-09 16:41:07,802 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 2813 ms
+2019-11-09 16:41:09,140 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-09 16:41:10,564 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1423 ms
+2019-11-09 16:42:44,160 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-09 16:42:44,726 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-09 16:51:42,010 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-09 16:51:42,038 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.

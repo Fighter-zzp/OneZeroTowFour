@@ -3,80 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="../plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
-    <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="../plugins/datatable/css/dataTables.bootstrap.min.css">
-    <script src="../plugins/datatable/js/dataTables.bootstrap.min.js"></script>
     <script src="../plugins/jquery/js/jquery-3.3.1.js"></script>
+    <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
     <script src="../plugins/bootstrap/js/bootstrap.js"></script>
-    <script src="../plugins/datatable/js/jquery.dataTables.min.js"></script>
     <script src="../js/user/listtravel.js"></script>
     <script src="../js/user/getrouteid.js"></script>
 
-<!--    <script>-->
+    <script>
 
-<!--        function getId(data) {-->
-<!--            alert(data)-->
-<!--            /* $("table tr:eq(5)").each(function(){-->
-<!--                 var id=$(this).find('td').eq(0).html();-->
-<!--                 alert(id);-->
-<!--             });*/-->
-<!--            /*-->
+        function getId(data) {
+            var rid=data;
+            alert(rid)
+            /* $("table tr:eq(5)").each(function(){
+                 var id=$(this).find('td').eq(0).html();
+                 alert(id);
+             });*/
+            /*
 
-<!--               收藏-->
-<!--             根据图片id（其实还有用户id），查询关于id的所有信息并展示-->
-<!--             */-->
-<!--            $.ajax({-->
-<!--                url: "/my_favorite",-->
-<!--                type: "GET",-->
-<!--                dataType: "json",-->
-<!--                data: data,-->
-<!--                success: function () {-->
-<!--                    alert(data)-->
-<!--                }-->
+               收藏
+             根据图片id（其实还有用户id），查询关于id的所有信息并展示
+             */
+            $.ajax({
+                url: "/saveId",
+                type: "POST",
+                dataType:"json",
+                data: {rid:rid},
+                success: function (da) {
+                    console.log(da)
+                    alert("这是返回值："+da)
+                }
 
-<!--            })-->
-<!--        }-->
-<!--    </script>-->
+            })
+        }
+    </script>
 </head>
 <body>
+<div id="insert_page"></div>
+<table id="test" class="table">
 
-<table id="test" class="display">
-    <thead>
-    <tr>
-        <th>1</th>
-        <th>2</th>
-        <th>3</th>
-        <th>4</th>
-        <th>5</th>
-    </tr>
-    </thead>
-    <tbody>
-    </tbody>
 </table>
-<!--第二步：添加如下 HTML 代码
-<table id="table_id_example" class="display">
-    <thead>
-    <tr>
-        <th>Column 1</th>
-        <th>Column 2</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Row 1 Data 1</td>
-        <td>Row 1 Data 2</td>
-    </tr>
-    <tr>
-        <td>Row 2 Data 1</td>
-        <td>Row 2 Data 2</td>
-    </tr>
-    </tbody>
-</table>-->
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('#test').DataTable();
-    });
-</script>
+
+
 </body>
 </html>

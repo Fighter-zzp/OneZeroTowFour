@@ -8,12 +8,44 @@
     <link href="static/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="static/css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
+    <script src="static/assert/js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#register").click(function () {
+                var sname = $("#sname").val();
+                var password = $("#password").val();
+                var email = $("#email").val();
+                var consphone = $("#consphone").val();
+                var address = $("#address").val();
+                var introduction = $("#introduction").val();
+                $.ajax({
+                    url:"register/insertCompany.do",
+                    type:"post",
+                    dataType:"json",
+                    data:{
+                        sname:sname,
+                        password:password,
+                        email:email,
+                        consphone:consphone,
+                        address:address,
+                        introduction:introduction
+                    },
+                    success:function (data) {
+                        if(data.result == 0){
+                            $(window).attr("location","http://localhost:8080/login.html");
+                        }
+                        else if(data.result == 1){
+                            $(window).attr("location","http://localhost:8080/login.html");
+                        }
+                    }
+                })
+            })
+        })
+    </script>
 </head>
 <body>
-<div class="signupform">
-    <h1><font color="#2f4f4f">商家入驻</font></h1>
+<div class="signupform" style="margin-top: 1%">
     <div class="container">
-
         <div class="agile_info">
             <div class="w3l_form">
                 <div class="left_grid_info">
@@ -27,40 +59,43 @@
             </div>
             <div class="w3_info">
                 <h2>商家入驻</h2>
-                <p></p>
                 <form action="#" method="post">
                     <div class="input-group">
                         <span><i class="fa fa-user" aria-hidden="true"></i></span>
-                        <input type="text" placeholder="用户名" required="">
+                        <input id="sname" type="text" placeholder="用户名">
                     </div>
                     <div class="input-group">
-                        <span><i class="fa fa-lock" aria-hidden="true"></i></span>
-                        <input type="password" placeholder="密码" required="">
+                        <span><i  class="fa fa-lock" aria-hidden="true"></i></span>
+                        <input id="password" type="password" placeholder="密码">
                     </div>
 
                     <div class="input-group">
                         <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                        <input type="email" placeholder="邮箱" required="">
+                        <input id="email" type="email" placeholder="邮箱">
                     </div>
                     <div class="input-group">
                         &nbsp;&nbsp;<span><i class="fa fa-phone-square" style="color: #01cd74"
                                              aria-hidden="true"></i></span>
-                        <input type="text" placeholder="手机号" required="">
+                        <input id="consphone" type="text" placeholder="手机号">
                     </div>
                     <div class="input-group">
                         &nbsp;&nbsp;<span><i class="fa fa-sitemap" style="color: #01cd74"
                                              aria-hidden="true"></i></span>
-                        <input type="text" placeholder="地址" required="">
+                        <input id="address" type="text" placeholder="地址">
+                    </div>
+                    <div class="input-group">
+                        &nbsp;&nbsp;<span><i class="fa fa-sitemap" style="color: #01cd74"
+                                             aria-hidden="true"></i></span>
+                        <input id="introduction" type="text" placeholder="简介">
                     </div>
                     <input type="checkbox" value="阅读协议"/> <h4>我已阅读协议 </h4>
-                    <a href="protocol.html" style="color:black;"><u>商家协议</u></a>
+                    <a href="xieyi.html" style="color:black;"><u>商家协议</u></a>
 
-                    <button class="btn btn-danger btn-block" type="submit">注册</button>
+                    <button id="register" class="btn btn-danger btn-block" type="button">注册</button>
                 </form>
             </div>
             <div class="clear"></div>
         </div>
-
     </div>
 </div>
 </body>

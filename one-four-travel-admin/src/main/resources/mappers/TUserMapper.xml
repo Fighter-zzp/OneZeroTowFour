@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.one.four.mapper.TUserMapper">
+    <resultMap id="BaseResultMap" type="com.travel.one.four.domain.TUser">
+        <!--@mbg.generated-->
+        <!--@Table t_user-->
+        <id column="uid" jdbcType="INTEGER" property="uid"/>
+        <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="birthday" jdbcType="DATE" property="birthday"/>
+        <result column="sex" jdbcType="CHAR" property="sex"/>
+        <result column="telephone" jdbcType="VARCHAR" property="telephone"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+        <result column="is_admin" jdbcType="BOOLEAN" property="isAdmin"/>
+        <result column="status" jdbcType="CHAR" property="status"/>
+        <result column="code" jdbcType="VARCHAR" property="code"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        `uid`, username, `password`, `name`, birthday, sex, telephone, email, is_admin, `status`,
+        code
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from t_user
+        where `uid` = #{uid,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete from t_user
+        where `uid` = #{uid,jdbcType=INTEGER}
+    </delete>
+    <delete id="deleteByIds" >
+        delete from t_user where uid in 
+        <foreach item="item" index="index" collection="ids"
+                 open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </delete>
+    <insert id="insert" keyColumn="uid" keyProperty="uid" parameterType="com.travel.one.four.domain.TUser"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into t_user (username, `password`, `name`,
+        birthday, sex, telephone,
+        email, is_admin, `status`,
+        code)
+        values (#{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR},
+        #{birthday,jdbcType=DATE}, #{sex,jdbcType=CHAR}, #{telephone,jdbcType=VARCHAR},
+        #{email,jdbcType=VARCHAR}, #{isAdmin,jdbcType=BOOLEAN}, #{status,jdbcType=CHAR},
+        #{code,jdbcType=VARCHAR})
+    </insert>
+    <insert id="insertSelective" keyColumn="uid" keyProperty="uid" parameterType="com.travel.one.four.domain.TUser"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into t_user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="username != null">
+                username,
+            </if>
+            <if test="password != null">
+                `password`,
+            </if>
+            <if test="name != null">
+                `name`,
+            </if>
+            <if test="birthday != null">
+                birthday,
+            </if>
+            <if test="sex != null">
+                sex,
+            </if>
+            <if test="telephone != null">
+                telephone,
+            </if>
+            <if test="email != null">
+                email,
+            </if>
+            <if test="isAdmin != null">
+                is_admin,
+            </if>
+            <if test="status != null">
+                `status`,
+            </if>
+            <if test="code != null">
+                code,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="username != null">
+                #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null">
+                #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="name != null">
+                #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="birthday != null">
+                #{birthday,jdbcType=DATE},
+            </if>
+            <if test="sex != null">
+                #{sex,jdbcType=CHAR},
+            </if>
+            <if test="telephone != null">
+                #{telephone,jdbcType=VARCHAR},
+            </if>
+            <if test="email != null">
+                #{email,jdbcType=VARCHAR},
+            </if>
+            <if test="isAdmin != null">
+                #{isAdmin,jdbcType=BOOLEAN},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=CHAR},
+            </if>
+            <if test="code != null">
+                #{code,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.travel.one.four.domain.TUser">
+        <!--@mbg.generated-->
+        update t_user
+        <trim prefix="set" suffixOverrides=",">
+            <if test="username != null">
+                username = #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null">
+                `password` = #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="name != null">
+                `name` = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="birthday != null">
+                birthday = #{birthday,jdbcType=DATE},
+            </if>
+            <if test="sex != null">
+                sex = #{sex,jdbcType=CHAR},
+            </if>
+            <if test="telephone != null">
+                telephone = #{telephone,jdbcType=VARCHAR},
+            </if>
+            <if test="email != null">
+                email = #{email,jdbcType=VARCHAR},
+            </if>
+            <if test="isAdmin != null">
+                is_admin = #{isAdmin,jdbcType=BOOLEAN},
+            </if>
+            <if test="status != null">
+                `status` = #{status,jdbcType=CHAR},
+            </if>
+            <if test="code != null">
+                code = #{code,jdbcType=VARCHAR},
+            </if>
+        </trim>
+        where `uid` = #{uid,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.travel.one.four.domain.TUser">
+        <!--@mbg.generated-->
+        update t_user
+        set username = #{username,jdbcType=VARCHAR},
+        `password` = #{password,jdbcType=VARCHAR},
+        `name` = #{name,jdbcType=VARCHAR},
+        birthday = #{birthday,jdbcType=DATE},
+        sex = #{sex,jdbcType=CHAR},
+        telephone = #{telephone,jdbcType=VARCHAR},
+        email = #{email,jdbcType=VARCHAR},
+        is_admin = #{isAdmin,jdbcType=BOOLEAN},
+        `status` = #{status,jdbcType=CHAR},
+        code = #{code,jdbcType=VARCHAR}
+        where `uid` = #{uid,jdbcType=INTEGER}
+    </update>
+
+    <select id="checkLogin" resultMap="BaseResultMap">
+        select * from t_user where (username = #{username} or email=#{username}) and password = #{password} and
+        is_admin=1
+    </select>
+
+    <select id="findCount" resultType="integer">
+    SELECT count(*) as num from t_companydata
+    UNION ALL
+    SELECT count(*) from t_user
+    UNION ALL
+    SELECT count(*) from t_route
+    UNION all
+    SELECT count(*) from t_favorite
+    UNION all
+    SELECT count(*) from t_nav
+    Union all
+    select count(*) from t_user where status='Y'
+  </select>
+
+    <select id="findAll" resultType="com.travel.one.four.domain.plus.UserFav">
+    select
+    tu.uid, tu.username, tu.name, tu.birthday, tu.sex, tu.telephone, tu.email,  tu.status,
+    (select count(*) from t_favorite where uid=tu.uid) as favCount
+    from t_user tu where is_admin=0
+    <include refid="base_where"/>
+  </select>
+
+    <select id="findByUid" resultType="com.travel.one.four.domain.plus.UserFav">
+        select
+        tu.uid, tu.username, tu.name, tu.birthday, tu.sex, tu.telephone, tu.email,  tu.status,
+        (select count(*) from t_favorite where uid=tu.uid) as favCount
+        from t_user tu where tu.uid=#{uid}
+    </select>
+
+    <sql id="base_where">
+        <where>
+            <if test="keyword!=null and keyword!=''">
+                and tu.username like concat('%',#{keyword},'%') or
+                tu.name like concat('%',#{keyword},'%') or
+                tu.sex like concat('%',#{keyword},'%') or
+                tu.birthday like concat('%',#{keyword},'%') or
+                tu.telephone like concat('%',#{keyword},'%') or
+                tu.status like concat('%',#{keyword},'%')
+            </if>
+        </where>
+    </sql>
+</mapper>

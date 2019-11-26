@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:aop="http://www.springframework.org/schema/aop"
-       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context
@@ -19,33 +19,39 @@
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
+    <context:property-placeholder location="classpath:jdbcConfig.properties" ignore-unresolvable="true"/>
 
-    <!--Spring整合MyBatis框架-->
-    <!--配置连接池-->
-    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-
-        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/travel?serverTimezone=GMT%2B8"/>
-        <property name="user" value="root"/>
-        <property name="password" value="root"/>
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driverClass}"/>
+        <property name="jdbcUrl" value="${jdbc.jdbcUrl}"/>
+        <property name="username" value="${jdbc.user}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="minimumIdle" value="5"/>
+        <property name="idleTimeout" value="600000"/>
+        <property name="maximumPoolSize" value="10"/>
+        <property name="autoCommit" value="true"/>
+        <property name="poolName" value="MyHikariCP"/>
+        <property name="maxLifetime" value="1800000"/>
+        <property name="connectionTimeout" value="30000"/>
+        <property name="connectionTestQuery" value="SELECT 1"/>
     </bean>
 
-
-    <!--配置SqlSessionFactory工厂-->
-    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <property name="dataSource" ref="dataSource" />
-        <!--加载mybatis的全局配置文件-->
-        <property name="configLocation" value="classpath:SqlMapConfig.xml"/>
-<!--        <property name="typeAliasesPackage" value="com.qf.domain"/>-->
-        <property name="mapperLocations">
-            <array>
-                <value>classpath:/com/travel/one/four/dao/**/*.xml</value>
-            </array>
+    <bean id="pageInterceptor" class="com.github.pagehelper.PageInterceptor">
+        <property name="properties">
+            <!--使用下面的方式配置参数，一行配置一个 -->
+            <value>
+                helperDialect=postgresql
+                reasonable=true
+                supportMethodsArguments=true
+                params=count=countSql
+                autoRuntimeDialect=true
+            </value>
         </property>
-
     </bean>
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
+          p:dataSource-ref="dataSource" p:mapperLocations="classpath:com/travel/one/four/dao/*.xml"
+          p:typeAliasesPackage="com.travel.one.four.domain" p:plugins-ref="pageInterceptor"/>
 
-    <!-- 自动扫描 将Mapper接口生成代理注入到Spring -->
     <bean id="mapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.travel.one.four.dao"/>
     </bean>
@@ -53,27 +59,19 @@
     <!--配置Spring框架声明式事务管理-->
     <!--配置事务管理器-->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource" />
+        <property name="dataSource" ref="dataSource"/>
     </bean>
 
     <!--配置事务通知-->
     <tx:advice id="txAdvice" transaction-manager="transactionManager">
         <tx:attributes>
-            <tx:method name="*" read-only="false" propagation="REQUIRED"/>
+            <tx:method name="save*" read-only="false" propagation="REQUIRED"/>
             <tx:method name="find*" read-only="true"/>
-            <tx:method name="get*" read-only="true"/>
         </tx:attributes>
     </tx:advice>
 
     <!--配置AOP增强-->
     <aop:config>
-        <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.travel.one.four.service.Impl.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.travel.one.four.service.impl.*.*(..))"/>
     </aop:config>
-
-
-
-
-
-
-    
 </beans>

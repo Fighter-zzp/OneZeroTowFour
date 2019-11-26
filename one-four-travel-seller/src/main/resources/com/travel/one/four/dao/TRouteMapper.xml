@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.one.four.dao.TRouteMapper">
+  <resultMap id="BaseResultMap" type="com.travel.one.four.domain.TRoute">
+    <!--@mbg.generated-->
+    <!--@Table t_route-->
+    <id column="rid" jdbcType="INTEGER" property="rid" />
+    <result column="rname" jdbcType="VARCHAR" property="rname" />
+    <result column="price" jdbcType="DOUBLE" property="price" />
+    <result column="routeIntroduce" jdbcType="VARCHAR" property="routeintroduce" />
+    <result column="rflag" jdbcType="CHAR" property="rflag" />
+    <result column="rdate" jdbcType="VARCHAR" property="rdate" />
+    <result column="isThemeTour" jdbcType="CHAR" property="isthemetour" />
+    <result column="count" jdbcType="INTEGER" property="count" />
+    <result column="cid" jdbcType="INTEGER" property="cid" />
+    <result column="rimage" jdbcType="VARCHAR" property="rimage" />
+    <result column="sid" jdbcType="INTEGER" property="sid" />
+    <result column="sourceId" jdbcType="VARCHAR" property="sourceid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    rid, rname, price, routeIntroduce, rflag, rdate, isThemeTour, `count`, cid, rimage, 
+    sid, sourceId
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from t_route
+    where rid = #{rid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--@mbg.generated-->
+    delete from t_route
+    where rid = #{rid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="rid" keyProperty="rid" parameterType="com.travel.one.four.domain.TRoute" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into t_route (rname, price, routeIntroduce, 
+      rflag, rdate, isThemeTour, 
+      `count`, cid, rimage, 
+      sid, sourceId)
+    values (#{rname,jdbcType=VARCHAR}, #{price,jdbcType=DOUBLE}, #{routeintroduce,jdbcType=VARCHAR}, 
+      #{rflag,jdbcType=CHAR}, #{rdate,jdbcType=VARCHAR}, #{isthemetour,jdbcType=CHAR}, 
+      #{count,jdbcType=INTEGER}, #{cid,jdbcType=INTEGER}, #{rimage,jdbcType=VARCHAR}, 
+      #{sid,jdbcType=INTEGER}, #{sourceid,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="rid" keyProperty="rid" parameterType="com.travel.one.four.domain.TRoute" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into t_route
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="rname != null">
+        rname,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="routeintroduce != null">
+        routeIntroduce,
+      </if>
+      <if test="rflag != null">
+        rflag,
+      </if>
+      <if test="rdate != null">
+        rdate,
+      </if>
+      <if test="isthemetour != null">
+        isThemeTour,
+      </if>
+      <if test="count != null">
+        `count`,
+      </if>
+      <if test="cid != null">
+        cid,
+      </if>
+      <if test="rimage != null">
+        rimage,
+      </if>
+      <if test="sid != null">
+        sid,
+      </if>
+      <if test="sourceid != null">
+        sourceId,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="rname != null">
+        #{rname,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=DOUBLE},
+      </if>
+      <if test="routeintroduce != null">
+        #{routeintroduce,jdbcType=VARCHAR},
+      </if>
+      <if test="rflag != null">
+        #{rflag,jdbcType=CHAR},
+      </if>
+      <if test="rdate != null">
+        #{rdate,jdbcType=VARCHAR},
+      </if>
+      <if test="isthemetour != null">
+        #{isthemetour,jdbcType=CHAR},
+      </if>
+      <if test="count != null">
+        #{count,jdbcType=INTEGER},
+      </if>
+      <if test="cid != null">
+        #{cid,jdbcType=INTEGER},
+      </if>
+      <if test="rimage != null">
+        #{rimage,jdbcType=VARCHAR},
+      </if>
+      <if test="sid != null">
+        #{sid,jdbcType=INTEGER},
+      </if>
+      <if test="sourceid != null">
+        #{sourceid,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.travel.one.four.domain.TRoute">
+    <!--@mbg.generated-->
+    update t_route
+    <set>
+      <if test="rname != null">
+        rname = #{rname,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=DOUBLE},
+      </if>
+      <if test="routeintroduce != null">
+        routeIntroduce = #{routeintroduce,jdbcType=VARCHAR},
+      </if>
+      <if test="rflag != null">
+        rflag = #{rflag,jdbcType=CHAR},
+      </if>
+      <if test="rdate != null">
+        rdate = #{rdate,jdbcType=VARCHAR},
+      </if>
+      <if test="isthemetour != null">
+        isThemeTour = #{isthemetour,jdbcType=CHAR},
+      </if>
+      <if test="count != null">
+        `count` = #{count,jdbcType=INTEGER},
+      </if>
+      <if test="cid != null">
+        cid = #{cid,jdbcType=INTEGER},
+      </if>
+      <if test="rimage != null">
+        rimage = #{rimage,jdbcType=VARCHAR},
+      </if>
+      <if test="sid != null">
+        sid = #{sid,jdbcType=INTEGER},
+      </if>
+      <if test="sourceid != null">
+        sourceId = #{sourceid,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where rid = #{rid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.travel.one.four.domain.TRoute">
+    <!--@mbg.generated-->
+    update t_route
+    set rname = #{rname,jdbcType=VARCHAR},
+      price = #{price,jdbcType=DOUBLE},
+      routeIntroduce = #{routeintroduce,jdbcType=VARCHAR},
+      rflag = #{rflag,jdbcType=CHAR},
+      rdate = #{rdate,jdbcType=VARCHAR},
+      isThemeTour = #{isthemetour,jdbcType=CHAR},
+      `count` = #{count,jdbcType=INTEGER},
+      cid = #{cid,jdbcType=INTEGER},
+      rimage = #{rimage,jdbcType=VARCHAR},
+      sid = #{sid,jdbcType=INTEGER},
+      sourceId = #{sourceid,jdbcType=VARCHAR}
+    where rid = #{rid,jdbcType=INTEGER}
+  </update>
+
+  <select id="findAllBySid" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List"/> from t_route where sid = #{sid} and rflag=1
+  </select>
+</mapper>

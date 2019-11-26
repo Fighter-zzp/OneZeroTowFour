@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.one.four.mapper.TRouteMapper">
+    <resultMap id="BaseResultMap" type="com.travel.one.four.domain.TRoute">
+        <!--@mbg.generated-->
+        <!--@Table t_route-->
+        <id column="rid" jdbcType="INTEGER" property="rid"/>
+        <result column="rname" jdbcType="VARCHAR" property="rname"/>
+        <result column="price" jdbcType="DOUBLE" property="price"/>
+        <result column="routeIntroduce" jdbcType="VARCHAR" property="routeintroduce"/>
+        <result column="rflag" jdbcType="CHAR" property="rflag"/>
+        <result column="rdate" jdbcType="VARCHAR" property="rdate"/>
+        <result column="isThemeTour" jdbcType="CHAR" property="isthemetour"/>
+        <result column="count" jdbcType="INTEGER" property="count"/>
+        <result column="cid" jdbcType="INTEGER" property="cid"/>
+        <result column="rimage" jdbcType="VARCHAR" property="rimage"/>
+        <result column="sid" jdbcType="INTEGER" property="sid"/>
+        <result column="sourceId" jdbcType="VARCHAR" property="sourceid"/>
+
+        <!--维护one方对象-->
+        <association property="seller" javaType="com.travel.one.four.domain.TCompanydata" >
+            <id column="sid" jdbcType="INTEGER" property="sid"/>
+            <result column="sname" jdbcType="VARCHAR" property="sname"/>
+            <result column="consphone" jdbcType="VARCHAR" property="consphone"/>
+            <result column="address" jdbcType="VARCHAR" property="address"/>
+            <result column="email" jdbcType="VARCHAR" property="email"/>
+            <result column="status" jdbcType="VARCHAR" property="status"/>
+            <result column="password" jdbcType="VARCHAR" property="password"/>
+            <result column="introduction" jdbcType="VARCHAR" property="introduction"/>
+        </association>
+        <association property="nav" javaType="com.travel.one.four.domain.TNav">
+            <id column="cid" jdbcType="INTEGER" property="cid"/>
+            <result column="cname" jdbcType="VARCHAR" property="cname"/>
+            <result column="status" jdbcType="INTEGER" property="status"/>
+        </association>
+<!--        一对多-->
+        <!--<collection property="routeImgList" ofType="com.travel.one.four.domain.TRouteImg" column="rid"
+                    select="com.travel.one.four.mapper.TRouteImgMapper.findByRid"/>-->
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        rid, rname, price, routeIntroduce, rflag, rdate, isThemeTour, `count`, cid, rimage,
+        sid, sourceId
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from t_route
+        where rid = #{rid,jdbcType=INTEGER}
+    </select>
+    <select id="findByCid" resultMap="BaseResultMap">
+        select tr.* ,tc.* from t_route tr ,t_companydata
+        tc where tr.cid=#{cid} and tc.sid=tr.sid
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete from t_route
+        where rid = #{rid,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyColumn="rid" keyProperty="rid" parameterType="com.travel.one.four.domain.TRoute"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into t_route (rname, price, routeIntroduce,
+        rflag, rdate, isThemeTour,
+        `count`, cid, rimage,
+        sid, sourceId)
+        values (#{rname,jdbcType=VARCHAR}, #{price,jdbcType=DOUBLE}, #{routeintroduce,jdbcType=VARCHAR},
+        #{rflag,jdbcType=CHAR}, #{rdate,jdbcType=VARCHAR}, #{isthemetour,jdbcType=CHAR},
+        #{count,jdbcType=INTEGER}, #{cid,jdbcType=INTEGER}, #{rimage,jdbcType=VARCHAR},
+        #{sid,jdbcType=INTEGER}, #{sourceid,jdbcType=VARCHAR})
+    </insert>
+    <insert id="insertSelective" keyColumn="rid" keyProperty="rid" parameterType="com.travel.one.four.domain.TRoute"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into t_route
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="rname != null">
+                rname,
+            </if>
+            <if test="price != null">
+                price,
+            </if>
+            <if test="routeintroduce != null">
+                routeIntroduce,
+            </if>
+            <if test="rflag != null">
+                rflag,
+            </if>
+            <if test="rdate != null">
+                rdate,
+            </if>
+            <if test="isthemetour != null">
+                isThemeTour,
+            </if>
+            <if test="count != null">
+                `count`,
+            </if>
+            <if test="cid != null">
+                cid,
+            </if>
+            <if test="rimage != null">
+                rimage,
+            </if>
+            <if test="sid != null">
+                sid,
+            </if>
+            <if test="sourceid != null">
+                sourceId,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="rname != null">
+                #{rname,jdbcType=VARCHAR},
+            </if>
+            <if test="price != null">
+                #{price,jdbcType=DOUBLE},
+            </if>
+            <if test="routeintroduce != null">
+                #{routeintroduce,jdbcType=VARCHAR},
+            </if>
+            <if test="rflag != null">
+                #{rflag,jdbcType=CHAR},
+            </if>
+            <if test="rdate != null">
+                #{rdate,jdbcType=VARCHAR},
+            </if>
+            <if test="isthemetour != null">
+                #{isthemetour,jdbcType=CHAR},
+            </if>
+            <if test="count != null">
+                #{count,jdbcType=INTEGER},
+            </if>
+            <if test="cid != null">
+                #{cid,jdbcType=INTEGER},
+            </if>
+            <if test="rimage != null">
+                #{rimage,jdbcType=VARCHAR},
+            </if>
+            <if test="sid != null">
+                #{sid,jdbcType=INTEGER},
+            </if>
+            <if test="sourceid != null">
+                #{sourceid,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.travel.one.four.domain.TRoute">
+        <!--@mbg.generated-->
+        update t_route
+        <set>
+            <if test="rname != null">
+                rname = #{rname,jdbcType=VARCHAR},
+            </if>
+            <if test="price != null">
+                price = #{price,jdbcType=DOUBLE},
+            </if>
+            <if test="routeintroduce != null">
+                routeIntroduce = #{routeintroduce,jdbcType=VARCHAR},
+            </if>
+            <if test="rflag != null">
+                rflag = #{rflag,jdbcType=CHAR},
+            </if>
+            <if test="rdate != null">
+                rdate = #{rdate,jdbcType=VARCHAR},
+            </if>
+            <if test="isthemetour != null">
+                isThemeTour = #{isthemetour,jdbcType=CHAR},
+            </if>
+            <if test="count != null">
+                `count` = #{count,jdbcType=INTEGER},
+            </if>
+            <if test="cid != null">
+                cid = #{cid,jdbcType=INTEGER},
+            </if>
+            <if test="rimage != null">
+                rimage = #{rimage,jdbcType=VARCHAR},
+            </if>
+            <if test="sid != null">
+                sid = #{sid,jdbcType=INTEGER},
+            </if>
+            <if test="sourceid != null">
+                sourceId = #{sourceid,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where rid = #{rid,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.travel.one.four.domain.TRoute">
+        <!--@mbg.generated-->
+        update t_route
+        set rname = #{rname,jdbcType=VARCHAR},
+        price = #{price,jdbcType=DOUBLE},
+        routeIntroduce = #{routeintroduce,jdbcType=VARCHAR},
+        rflag = #{rflag,jdbcType=CHAR},
+        rdate = #{rdate,jdbcType=VARCHAR},
+        isThemeTour = #{isthemetour,jdbcType=CHAR},
+        `count` = #{count,jdbcType=INTEGER},
+        cid = #{cid,jdbcType=INTEGER},
+        rimage = #{rimage,jdbcType=VARCHAR},
+        sid = #{sid,jdbcType=INTEGER},
+        sourceId = #{sourceid,jdbcType=VARCHAR}
+        where rid = #{rid,jdbcType=INTEGER}
+    </update>
+
+    <select id="findCount" resultType="integer">
+    select count(*) from t_route
+  </select>
+
+    <select id="pageFindByUid" resultMap="BaseResultMap">
+        SELECT tr.rid, tr.rname, tr.price, tr.routeIntroduce, tr.rflag,tr.rdate, tr.rimage,
+        tc.sid,tc.sname
+        FROM
+        t_favorite tf LEFT JOIN t_route tr on tf.rid=tr.rid LEFT JOIN t_companydata tc on tr.sid=tc.sid
+        <where>
+            <if test="keyword!=null and keyword!=''">
+                and rname like concat('%',#{keyword},'%')
+            </if>
+            <if test="uid>0">
+                and tf.uid = #{uid}
+            </if>
+            <!--            and tf.rid=tr.rid and tr.rid in (SELECT rid FROM companydata_route WHERE sid=tc.sid);-->
+        </where>
+    </select>
+
+    <select id="pageFindBySid" resultMap="BaseResultMap">
+        SELECT tr.rid, tr.rname, tr.price, tr.routeIntroduce, tr.rflag, tr.rdate,tr.cid, tr.rimage,
+        tr.sid
+        FROM t_companydata tc,t_route tr
+        <where>
+            <if test="keyword!=null and keyword!=''">
+                and rname like concat('%',#{keyword},'%')
+            </if>
+            <if test="sid>0">
+                and tr.sid = #{sid}
+            </if>
+            and tr.sid=tc.sid
+        </where>
+    </select>
+
+    <select id="pageFindByCid" resultMap="BaseResultMap">
+        SELECT tr.rid, tr.rname, tr.price, tr.routeIntroduce, tr.rflag, tr.rdate,tr.cid, tr.rimage,
+        tr.sid
+        FROM t_nav tn,t_route tr
+        <where>
+            <if test="keyword!=null and keyword!=''">
+                and tr.rname like concat('%',#{keyword},'%')
+            </if>
+            <if test="cid>0">
+                and tr.cid = #{cid}
+            </if>
+            and tr.cid=tn.cid
+        </where>
+    </select>
+    <update id="updateFlagByRid">
+        update t_route
+        <set>
+            <if test=" status>0">
+                rflag = 0
+            </if>
+            <if test="status==0">
+                rflag = 1
+            </if>
+        </set>
+        where rid=#{rid}
+    </update>
+
+    <select id="findAllInfo" resultMap="BaseResultMap">
+        select tr.rid, tr.rname, tr.price, tr.routeIntroduce, tr.rflag, tr.rdate,tr.cid, tr.rimage,
+        tr.sid,tn.cname,tc.sname
+        FROM t_nav tn left join t_route tr on tn.cid=tr.cid left join t_companydata tc on tc.sid=tr.sid
+        <where>
+            <if test="keyword!=null and keyword!=''">
+                and tr.rname like concat('%',#{keyword},'%')
+            </if>
+        </where>
+    </select>
+</mapper>

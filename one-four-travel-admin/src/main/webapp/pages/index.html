@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin后台</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="static/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="static/vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Fontastic Custom icon font-->
+    <link rel="stylesheet" href="static/css/fontastic.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="static/css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="static/css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="static/img/favicon.ico">
+</head>
+<body>
+    <div class="page">
+        <!-- Main Navbar-->
+        <header class="header" id="header"></header>
+        <div class="page-content d-flex align-items-stretch">
+            <!-- Side Navbar -->
+            <nav class="side-navbar" id="nav"></nav>
+            <div class="content-inner">
+                <!-- Page Header-->
+                <header class="page-header">
+                    <div class="container-fluid">
+                        <h2 class="no-margin-bottom">流量</h2>
+                    </div>
+                </header>
+                <!-- Dashboard Counts Section-->
+                <section class="dashboard-counts no-padding-bottom">
+                    <div class="container-fluid">
+                        <div class="row bg-white has-shadow">
+                            <!-- Item -->
+                            <div class="col-xl-2 col-sm-6">
+                                <div class="item d-flex align-items-center">
+                                    <div class="icon bg-violet"><i class="icon-user"></i></div>
+                                    <div class="title"><span>旅社<br>数</span>
+                                        <div class="progress">
+                                            <div role="progressbar" style="width: 25%; height: 4px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-violet"></div>
+                                        </div>
+                                    </div>
+                                    <div class="number"><strong id="companyNum">25</strong></div>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="col-xl-2 col-sm-6">
+                                <div class="item d-flex align-items-center">
+                                    <div class="icon bg-red"><i class="icon-padnote"></i></div>
+                                    <div class="title"><span>用户<br>数</span>
+                                        <div class="progress">
+                                            <div role="progressbar" style="width: 70%; height: 4px;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-red"></div>
+                                        </div>
+                                    </div>
+                                    <div class="number"><strong id="userNum">70</strong></div>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="col-xl-2 col-sm-6">
+                                <div class="item d-flex align-items-center">
+                                    <div class="icon bg-green"><i class="icon-bill"></i></div>
+                                    <div class="title"><span>路线<br>数</span>
+                                        <div class="progress">
+                                            <div role="progressbar" style="width: 40%; height: 4px;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-green"></div>
+                                        </div>
+                                    </div>
+                                    <div class="number"><strong id="routeNum">40</strong></div>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="col-xl-2 col-sm-6">
+                                <div class="item d-flex align-items-center">
+                                    <div class="icon bg-orange"><i class="icon-check"></i></div>
+                                    <div class="title"><span>收藏<br>总数</span>
+                                        <div class="progress">
+                                            <div role="progressbar" style="width: 50%; height: 4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-orange"></div>
+                                        </div>
+                                    </div>
+                                    <div class="number"><strong id="favoriteNum">50</strong></div>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="col-xl-2 col-sm-6">
+                                <div class="item d-flex align-items-center">
+                                    <div class="icon bg-yellow"><i class="icon-check"></i></div>
+                                    <div class="title"><span>分类<br>数</span>
+                                        <div class="progress">
+                                            <div role="progressbar" style="width: 50%; height: 4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-orange"></div>
+                                        </div>
+                                    </div>
+                                    <div class="number"><strong id="navNum">50</strong></div>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="col-xl-2 col-sm-6">
+                                <div class="item d-flex align-items-center">
+                                    <div class="icon bg-red"><i class="icon-check"></i></div>
+                                    <div class="title"><span>在线<br>数</span>
+                                        <div class="progress">
+                                            <div role="progressbar" style="width: 50%; height: 4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-orange"></div>
+                                        </div>
+                                    </div>
+                                    <div class="number"><strong id="statusNum">50</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="dashboard-header">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12"><img src="static/img/mockup7.jpg" alt="ss" class="img-fluid"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+<!-- JavaScript files-->
+<script src="static/vendor/jquery/jquery.min.js"></script>
+<script src="static/vendor/popper.js/umd/popper.min.js"></script>
+<script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="static/vendor/jquery.cookie/jquery.cookie.js"></script>
+<script src="static/vendor/jquery-validation/jquery.validate.min.js"></script>
+<!-- Main File-->
+<script src="static/js/front.js"></script>
+ <script src="static/js/include.js"></script>
+<script src="ajax/home.js"></script>
+
+</body>
+</html>

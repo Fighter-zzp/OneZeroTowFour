@@ -1,0 +1,773 @@
+2019-11-18 19:56:34,657 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-18 19:56:34,805 DEBUG [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext
+2019-11-18 19:56:35,453 DEBUG [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] - Identified candidate component class: file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\com\travel\one\four\service\impl\TCompanyDataServiceImpl.class]
+2019-11-18 19:56:35,454 DEBUG [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] - Identified candidate component class: file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\com\travel\one\four\service\impl\TFavoriteServiceImpl.class]
+2019-11-18 19:56:35,455 DEBUG [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] - Identified candidate component class: file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\com\travel\one\four\service\impl\TNavServiceImpl.class]
+2019-11-18 19:56:35,456 DEBUG [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] - Identified candidate component class: file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\com\travel\one\four\service\impl\TRouteServiceImpl.class]
+2019-11-18 19:56:35,456 DEBUG [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] - Identified candidate component class: file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\com\travel\one\four\service\impl\TUserServiceImpl.class]
+2019-11-18 19:56:35,680 DEBUG [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loaded 9 bean definitions from class path resource [spring-mybatis.xml]
+2019-11-18 19:56:35,682 DEBUG [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loaded 19 bean definitions from class path resource [applicationContext.xml]
+2019-11-18 19:56:35,838 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-11-18 19:56:36,022 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'mapperScanner'
+2019-11-18 19:56:36,153 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-11-18 19:56:36,160 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\com\travel\one\four\mapper\TCompanydataMapper.class]
+2019-11-18 19:56:36,160 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\com\travel\one\four\mapper\TFavoriteMapper.class]
+2019-11-18 19:56:36,160 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\com\travel\one\four\mapper\TNavMapper.class]
+2019-11-18 19:56:36,160 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\com\travel\one\four\mapper\TRouteImgMapper.class]
+2019-11-18 19:56:36,160 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\com\travel\one\four\mapper\TRouteMapper.class]
+2019-11-18 19:56:36,161 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\com\travel\one\four\mapper\TUserMapper.class]
+2019-11-18 19:56:36,164 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name 'TCompanydataMapper' and 'com.travel.one.four.mapper.TCompanydataMapper' mapperInterface
+2019-11-18 19:56:36,170 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name 'TCompanydataMapper'.
+2019-11-18 19:56:36,171 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name 'TFavoriteMapper' and 'com.travel.one.four.mapper.TFavoriteMapper' mapperInterface
+2019-11-18 19:56:36,171 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name 'TFavoriteMapper'.
+2019-11-18 19:56:36,171 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name 'TNavMapper' and 'com.travel.one.four.mapper.TNavMapper' mapperInterface
+2019-11-18 19:56:36,172 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name 'TNavMapper'.
+2019-11-18 19:56:36,172 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name 'TRouteImgMapper' and 'com.travel.one.four.mapper.TRouteImgMapper' mapperInterface
+2019-11-18 19:56:36,172 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name 'TRouteImgMapper'.
+2019-11-18 19:56:36,172 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name 'TRouteMapper' and 'com.travel.one.four.mapper.TRouteMapper' mapperInterface
+2019-11-18 19:56:36,173 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name 'TRouteMapper'.
+2019-11-18 19:56:36,173 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name 'TUserMapper' and 'com.travel.one.four.mapper.TUserMapper' mapperInterface
+2019-11-18 19:56:36,173 DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name 'TUserMapper'.
+2019-11-18 19:56:36,182 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2019-11-18 19:56:36,253 DEBUG [org.springframework.jndi.JndiTemplate] - Looking up JNDI object with name [java:comp/env/jdbc.driverClass]
+2019-11-18 19:56:36,256 DEBUG [org.springframework.jndi.JndiLocatorDelegate] - Converted JNDI name [java:comp/env/jdbc.driverClass] not found - trying original name [jdbc.driverClass]. javax.naming.NameNotFoundException: Name [jdbc.driverClass] is not bound in this Context. Unable to find [jdbc.driverClass].
+2019-11-18 19:56:36,256 DEBUG [org.springframework.jndi.JndiTemplate] - Looking up JNDI object with name [jdbc.driverClass]
+2019-11-18 19:56:36,257 DEBUG [org.springframework.jndi.JndiPropertySource] - JNDI lookup for name [jdbc.driverClass] threw NamingException with message: Name [jdbc.driverClass] is not bound in this Context. Unable to find [jdbc.driverClass].. Returning null.
+2019-11-18 19:56:36,258 DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Found key 'jdbc.driverClass' in PropertySource 'localProperties' with value of type String
+2019-11-18 19:56:36,258 DEBUG [org.springframework.jndi.JndiTemplate] - Looking up JNDI object with name [java:comp/env/jdbc.jdbcUrl]
+2019-11-18 19:56:36,261 DEBUG [org.springframework.jndi.JndiLocatorDelegate] - Converted JNDI name [java:comp/env/jdbc.jdbcUrl] not found - trying original name [jdbc.jdbcUrl]. javax.naming.NameNotFoundException: Name [jdbc.jdbcUrl] is not bound in this Context. Unable to find [jdbc.jdbcUrl].
+2019-11-18 19:56:36,261 DEBUG [org.springframework.jndi.JndiTemplate] - Looking up JNDI object with name [jdbc.jdbcUrl]
+2019-11-18 19:56:36,262 DEBUG [org.springframework.jndi.JndiPropertySource] - JNDI lookup for name [jdbc.jdbcUrl] threw NamingException with message: Name [jdbc.jdbcUrl] is not bound in this Context. Unable to find [jdbc.jdbcUrl].. Returning null.
+2019-11-18 19:56:36,262 DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Found key 'jdbc.jdbcUrl' in PropertySource 'localProperties' with value of type String
+2019-11-18 19:56:36,262 DEBUG [org.springframework.jndi.JndiTemplate] - Looking up JNDI object with name [java:comp/env/jdbc.user]
+2019-11-18 19:56:36,263 DEBUG [org.springframework.jndi.JndiLocatorDelegate] - Converted JNDI name [java:comp/env/jdbc.user] not found - trying original name [jdbc.user]. javax.naming.NameNotFoundException: Name [jdbc.user] is not bound in this Context. Unable to find [jdbc.user].
+2019-11-18 19:56:36,263 DEBUG [org.springframework.jndi.JndiTemplate] - Looking up JNDI object with name [jdbc.user]
+2019-11-18 19:56:36,264 DEBUG [org.springframework.jndi.JndiPropertySource] - JNDI lookup for name [jdbc.user] threw NamingException with message: Name [jdbc.user] is not bound in this Context. Unable to find [jdbc.user].. Returning null.
+2019-11-18 19:56:36,264 DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Found key 'jdbc.user' in PropertySource 'localProperties' with value of type String
+2019-11-18 19:56:36,264 DEBUG [org.springframework.jndi.JndiTemplate] - Looking up JNDI object with name [java:comp/env/jdbc.password]
+2019-11-18 19:56:36,265 DEBUG [org.springframework.jndi.JndiLocatorDelegate] - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].
+2019-11-18 19:56:36,265 DEBUG [org.springframework.jndi.JndiTemplate] - Looking up JNDI object with name [jdbc.password]
+2019-11-18 19:56:36,266 DEBUG [org.springframework.jndi.JndiPropertySource] - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].. Returning null.
+2019-11-18 19:56:36,266 DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+2019-11-18 19:56:36,267 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-11-18 19:56:36,275 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-11-18 19:56:36,279 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-11-18 19:56:36,289 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2019-11-18 19:56:36,314 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2019-11-18 19:56:36,428 DEBUG [org.springframework.ui.context.support.UiApplicationContextUtils] - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@78c0d278]
+2019-11-18 19:56:36,431 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'TCompanyDataServiceImpl'
+2019-11-18 19:56:36,432 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+2019-11-18 19:56:36,620 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'TCompanydataMapper'
+2019-11-18 19:56:36,648 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'sqlSessionFactory'
+2019-11-18 19:56:36,650 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'dataSource'
+2019-11-18 19:56:36,763 DEBUG [com.zaxxer.hikari.HikariConfig] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader ParallelWebappClassLoader
+  context: ROOT
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@459e9125
+
+2019-11-18 19:56:37,335 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'pageInterceptor'
+2019-11-18 19:56:37,512 DEBUG [org.mybatis.spring.SqlSessionFactoryBean] - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2019-11-18 19:56:37,759 DEBUG [org.mybatis.spring.SqlSessionFactoryBean] - Registered plugin: 'com.github.pagehelper.PageInterceptor@3241c673'
+2019-11-18 19:56:38,116 DEBUG [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\mappers\TCompanydataMapper.xml]'
+2019-11-18 19:56:38,140 DEBUG [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\mappers\TFavoriteMapper.xml]'
+2019-11-18 19:56:38,182 DEBUG [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\mappers\TNavMapper.xml]'
+2019-11-18 19:56:38,221 DEBUG [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\mappers\TRouteImgMapper.xml]'
+2019-11-18 19:56:38,272 DEBUG [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\mappers\TRouteMapper.xml]'
+2019-11-18 19:56:38,309 DEBUG [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\mappers\TUserMapper.xml]'
+2019-11-18 19:56:38,398 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'TRouteMapper'
+2019-11-18 19:56:38,413 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'txAdvice'
+2019-11-18 19:56:38,451 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'transactionManager'
+2019-11-18 19:56:38,548 DEBUG [org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] - Adding transactional method [save*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+2019-11-18 19:56:38,548 DEBUG [org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] - Adding transactional method [find*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+2019-11-18 19:56:38,589 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'TFavoriteServiceImpl'
+2019-11-18 19:56:38,591 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'TFavoriteMapper'
+2019-11-18 19:56:38,600 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'TNavServiceImpl'
+2019-11-18 19:56:38,602 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'TNavMapper'
+2019-11-18 19:56:38,613 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'TRouteServiceImpl'
+2019-11-18 19:56:38,618 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'TUserServiceImpl'
+2019-11-18 19:56:38,619 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'TUserMapper'
+2019-11-18 19:56:38,634 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'TRouteImgMapper'
+2019-11-18 19:56:38,679 DEBUG [org.springframework.jndi.JndiTemplate] - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2019-11-18 19:56:38,680 DEBUG [org.springframework.jndi.JndiLocatorDelegate] - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2019-11-18 19:56:38,680 DEBUG [org.springframework.jndi.JndiTemplate] - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2019-11-18 19:56:38,681 DEBUG [org.springframework.jndi.JndiPropertySource] - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2019-11-18 19:56:38,687 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 4027 ms
+2019-11-18 19:56:39,113 DEBUG [org.springframework.web.filter.HiddenHttpMethodFilter] - Filter 'HiddenHttpMethodFilter' configured for use
+2019-11-18 19:56:39,177 DEBUG [org.springframework.web.filter.CharacterEncodingFilter] - Filter 'characterEncodingFilter' configured for use
+2019-11-18 19:56:39,234 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-18 19:56:39,234 DEBUG [org.springframework.jndi.JndiTemplate] - Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+2019-11-18 19:56:39,235 DEBUG [org.springframework.jndi.JndiLocatorDelegate] - Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+2019-11-18 19:56:39,235 DEBUG [org.springframework.jndi.JndiTemplate] - Looking up JNDI object with name [spring.profiles.active]
+2019-11-18 19:56:39,237 DEBUG [org.springframework.jndi.JndiPropertySource] - JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+2019-11-18 19:56:39,237 DEBUG [org.springframework.jndi.JndiTemplate] - Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+2019-11-18 19:56:39,237 DEBUG [org.springframework.jndi.JndiLocatorDelegate] - Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+2019-11-18 19:56:39,238 DEBUG [org.springframework.jndi.JndiTemplate] - Looking up JNDI object with name [spring.profiles.default]
+2019-11-18 19:56:39,239 DEBUG [org.springframework.jndi.JndiPropertySource] - JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+2019-11-18 19:56:39,244 DEBUG [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet'
+2019-11-18 19:56:39,314 DEBUG [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] - Identified candidate component class: file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\com\travel\one\four\controller\CompanyDataController.class]
+2019-11-18 19:56:39,316 DEBUG [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] - Identified candidate component class: file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\com\travel\one\four\controller\FavoriteController.class]
+2019-11-18 19:56:39,317 DEBUG [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] - Identified candidate component class: file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\com\travel\one\four\controller\LoginController.class]
+2019-11-18 19:56:39,319 DEBUG [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] - Identified candidate component class: file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\com\travel\one\four\controller\NavController.class]
+2019-11-18 19:56:39,320 DEBUG [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] - Identified candidate component class: file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\com\travel\one\four\controller\RouteController.class]
+2019-11-18 19:56:39,321 DEBUG [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] - Identified candidate component class: file [E:\idea\Javacode\one-zero-tow-four\one-four-travel-admin\target\one-four-travel-admin\WEB-INF\classes\com\travel\one\four\controller\UserController.class]
+2019-11-18 19:56:39,538 DEBUG [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loaded 27 bean definitions from class path resource [springmvc.xml]
+2019-11-18 19:56:39,571 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-11-18 19:56:39,692 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-11-18 19:56:39,692 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-11-18 19:56:39,693 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-11-18 19:56:39,697 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2019-11-18 19:56:39,699 DEBUG [org.springframework.ui.context.support.UiApplicationContextUtils] - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@a13cc20]
+2019-11-18 19:56:39,700 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'companyDataController'
+2019-11-18 19:56:39,708 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'favoriteController'
+2019-11-18 19:56:39,710 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'loginController'
+2019-11-18 19:56:39,712 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'navController'
+2019-11-18 19:56:39,716 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'routeController'
+2019-11-18 19:56:39,718 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'userController'
+2019-11-18 19:56:39,720 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'internalResourceViewResolver'
+2019-11-18 19:56:39,771 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2019-11-18 19:56:39,797 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2019-11-18 19:56:39,865 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'mvcCorsConfigurations'
+2019-11-18 19:56:39,867 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2019-11-18 19:56:39,870 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2019-11-18 19:56:40,047 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2019-11-18 19:56:40,132 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - 28 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2019-11-18 19:56:40,132 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+2019-11-18 19:56:40,907 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-11-18 19:56:41,026 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2019-11-18 19:56:41,042 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-11-18 19:56:41,093 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2019-11-18 19:56:41,163 DEBUG [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-11-18 19:56:41,164 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2019-11-18 19:56:41,179 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2019-11-18 19:56:41,186 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2019-11-18 19:56:41,207 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2019-11-18 19:56:41,214 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2019-11-18 19:56:41,245 DEBUG [org.springframework.jndi.JndiTemplate] - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2019-11-18 19:56:41,247 DEBUG [org.springframework.jndi.JndiLocatorDelegate] - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2019-11-18 19:56:41,248 DEBUG [org.springframework.jndi.JndiTemplate] - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2019-11-18 19:56:41,249 DEBUG [org.springframework.jndi.JndiPropertySource] - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2019-11-18 19:56:41,249 DEBUG [org.springframework.web.servlet.DispatcherServlet] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-11-18 19:56:41,249 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 2015 ms
+2019-11-18 19:57:00,190 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/admin/checkAdmin.do?username=admin&password=123", parameters={masked}
+2019-11-18 19:57:00,215 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.LoginController#checkAdmin(String, String, HttpSession)
+2019-11-18 19:57:00,466 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:57:00,523 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5024b31a] was not registered for synchronization because synchronization is not active
+2019-11-18 19:57:00,575 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:57:00,577 DEBUG [com.zaxxer.hikari.HikariConfig] - MyHikariCP - configuration:
+2019-11-18 19:57:00,582 DEBUG [com.zaxxer.hikari.HikariConfig] - allowPoolSuspension.............false
+2019-11-18 19:57:00,583 DEBUG [com.zaxxer.hikari.HikariConfig] - autoCommit......................true
+2019-11-18 19:57:00,583 DEBUG [com.zaxxer.hikari.HikariConfig] - catalog.........................none
+2019-11-18 19:57:00,583 DEBUG [com.zaxxer.hikari.HikariConfig] - connectionInitSql...............none
+2019-11-18 19:57:00,583 DEBUG [com.zaxxer.hikari.HikariConfig] - connectionTestQuery............."SELECT 1"
+2019-11-18 19:57:00,583 DEBUG [com.zaxxer.hikari.HikariConfig] - connectionTimeout...............30000
+2019-11-18 19:57:00,591 DEBUG [com.zaxxer.hikari.HikariConfig] - dataSource......................none
+2019-11-18 19:57:00,592 DEBUG [com.zaxxer.hikari.HikariConfig] - dataSourceClassName.............none
+2019-11-18 19:57:00,593 DEBUG [com.zaxxer.hikari.HikariConfig] - dataSourceJNDI..................none
+2019-11-18 19:57:00,595 DEBUG [com.zaxxer.hikari.HikariConfig] - dataSourceProperties............{password=<masked>}
+2019-11-18 19:57:00,596 DEBUG [com.zaxxer.hikari.HikariConfig] - driverClassName................."com.mysql.cj.jdbc.Driver"
+2019-11-18 19:57:00,596 DEBUG [com.zaxxer.hikari.HikariConfig] - healthCheckProperties...........{}
+2019-11-18 19:57:00,596 DEBUG [com.zaxxer.hikari.HikariConfig] - healthCheckRegistry.............none
+2019-11-18 19:57:00,596 DEBUG [com.zaxxer.hikari.HikariConfig] - idleTimeout.....................600000
+2019-11-18 19:57:00,597 DEBUG [com.zaxxer.hikari.HikariConfig] - initializationFailTimeout.......1
+2019-11-18 19:57:00,598 DEBUG [com.zaxxer.hikari.HikariConfig] - isolateInternalQueries..........false
+2019-11-18 19:57:00,600 DEBUG [com.zaxxer.hikari.HikariConfig] - jdbcUrl.........................jdbc:mysql:///ssm?characterEncoding=utf8&useUnicode=true&useSSL=false&serverTimezone=UTC
+2019-11-18 19:57:00,600 DEBUG [com.zaxxer.hikari.HikariConfig] - leakDetectionThreshold..........0
+2019-11-18 19:57:00,600 DEBUG [com.zaxxer.hikari.HikariConfig] - maxLifetime.....................1800000
+2019-11-18 19:57:00,600 DEBUG [com.zaxxer.hikari.HikariConfig] - maximumPoolSize.................10
+2019-11-18 19:57:00,600 DEBUG [com.zaxxer.hikari.HikariConfig] - metricRegistry..................none
+2019-11-18 19:57:00,601 DEBUG [com.zaxxer.hikari.HikariConfig] - metricsTrackerFactory...........none
+2019-11-18 19:57:00,601 DEBUG [com.zaxxer.hikari.HikariConfig] - minimumIdle.....................5
+2019-11-18 19:57:00,601 DEBUG [com.zaxxer.hikari.HikariConfig] - password........................<masked>
+2019-11-18 19:57:00,601 DEBUG [com.zaxxer.hikari.HikariConfig] - poolName........................"MyHikariCP"
+2019-11-18 19:57:00,602 DEBUG [com.zaxxer.hikari.HikariConfig] - readOnly........................false
+2019-11-18 19:57:00,602 DEBUG [com.zaxxer.hikari.HikariConfig] - registerMbeans..................false
+2019-11-18 19:57:00,605 DEBUG [com.zaxxer.hikari.HikariConfig] - scheduledExecutor...............none
+2019-11-18 19:57:00,605 DEBUG [com.zaxxer.hikari.HikariConfig] - schema..........................none
+2019-11-18 19:57:00,605 DEBUG [com.zaxxer.hikari.HikariConfig] - threadFactory...................internal
+2019-11-18 19:57:00,605 DEBUG [com.zaxxer.hikari.HikariConfig] - transactionIsolation............default
+2019-11-18 19:57:00,605 DEBUG [com.zaxxer.hikari.HikariConfig] - username........................"root"
+2019-11-18 19:57:00,605 DEBUG [com.zaxxer.hikari.HikariConfig] - validationTimeout...............5000
+2019-11-18 19:57:00,605 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-18 19:57:01,548 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1
+2019-11-18 19:57:01,555 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-18 19:57:01,566 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@1986051475 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will not be managed by Spring
+2019-11-18 19:57:01,577 DEBUG [com.travel.one.four.mapper.TUserMapper.checkLogin] - ==>  Preparing: select * from t_user where (username = ? or email=?) and password = ? and is_admin=1 
+2019-11-18 19:57:01,630 DEBUG [com.travel.one.four.mapper.TUserMapper.checkLogin] - ==> Parameters: admin(String), admin(String), 123(String)
+2019-11-18 19:57:01,657 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - Before cleanup stats (total=1, active=1, idle=0, waiting=0)
+2019-11-18 19:57:01,658 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - After cleanup  stats (total=1, active=1, idle=0, waiting=0)
+2019-11-18 19:57:01,664 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@51187d5
+2019-11-18 19:57:01,669 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@442c8dee
+2019-11-18 19:57:01,674 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@75a20a5e
+2019-11-18 19:57:01,682 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@240372a1
+2019-11-18 19:57:01,687 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d677b0a
+2019-11-18 19:57:01,688 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - After adding stats (total=6, active=1, idle=5, waiting=0)
+2019-11-18 19:57:01,884 DEBUG [com.travel.one.four.mapper.TUserMapper.checkLogin] - <==      Total: 1
+2019-11-18 19:57:01,894 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5024b31a]
+2019-11-18 19:57:02,134 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:57:02,149 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={})]
+2019-11-18 19:57:02,216 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:57:02,648 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/admin/home.do", parameters={}
+2019-11-18 19:57:02,649 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.LoginController#home()
+2019-11-18 19:57:02,650 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:57:02,650 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@627791f4] was not registered for synchronization because synchronization is not active
+2019-11-18 19:57:02,651 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:57:02,652 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@1398797071 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will not be managed by Spring
+2019-11-18 19:57:02,653 DEBUG [com.travel.one.four.mapper.TUserMapper.findCount] - ==>  Preparing: SELECT count(*) as num from t_companydata UNION ALL SELECT count(*) from t_user UNION ALL SELECT count(*) from t_route UNION all SELECT count(*) from t_favorite UNION all SELECT count(*) from t_nav Union all select count(*) from t_user where status='Y' 
+2019-11-18 19:57:02,653 DEBUG [com.travel.one.four.mapper.TUserMapper.findCount] - ==> Parameters: 
+2019-11-18 19:57:02,703 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/admin/showName.do", parameters={}
+2019-11-18 19:57:02,707 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.LoginController#showName(HttpSession)
+2019-11-18 19:57:02,714 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:57:02,715 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=admin, extend={})]
+2019-11-18 19:57:02,717 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:57:02,951 DEBUG [com.travel.one.four.mapper.TUserMapper.findCount] - <==      Total: 6
+2019-11-18 19:57:02,951 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@627791f4]
+2019-11-18 19:57:02,952 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:57:02,980 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={count=Count(companyNum=5, userNum=17, routeNum=514, favoriteNum=29 (truncated)...]
+2019-11-18 19:57:02,993 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:57:31,660 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - Before cleanup stats (total=6, active=0, idle=6, waiting=0)
+2019-11-18 19:57:31,660 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - After cleanup  stats (total=6, active=0, idle=6, waiting=0)
+2019-11-18 19:57:46,334 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/admin/home.do", parameters={}
+2019-11-18 19:57:46,335 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.LoginController#home()
+2019-11-18 19:57:46,336 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:57:46,336 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5539f4d9] was not registered for synchronization because synchronization is not active
+2019-11-18 19:57:46,336 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:57:46,337 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@1129617763 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will not be managed by Spring
+2019-11-18 19:57:46,338 DEBUG [com.travel.one.four.mapper.TUserMapper.findCount] - ==>  Preparing: SELECT count(*) as num from t_companydata UNION ALL SELECT count(*) from t_user UNION ALL SELECT count(*) from t_route UNION all SELECT count(*) from t_favorite UNION all SELECT count(*) from t_nav Union all select count(*) from t_user where status='Y' 
+2019-11-18 19:57:46,340 DEBUG [com.travel.one.four.mapper.TUserMapper.findCount] - ==> Parameters: 
+2019-11-18 19:57:46,372 DEBUG [com.travel.one.four.mapper.TUserMapper.findCount] - <==      Total: 6
+2019-11-18 19:57:46,372 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5539f4d9]
+2019-11-18 19:57:46,375 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:57:46,375 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={count=Count(companyNum=6, userNum=17, routeNum=514, favoriteNum=29 (truncated)...]
+2019-11-18 19:57:46,379 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:57:46,399 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/admin/showName.do", parameters={}
+2019-11-18 19:57:46,400 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.LoginController#showName(HttpSession)
+2019-11-18 19:57:46,401 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:57:46,401 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=admin, extend={})]
+2019-11-18 19:57:46,405 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:57:50,155 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/user/list.do?currentPage=1&keyword=", parameters={masked}
+2019-11-18 19:57:50,158 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.UserController#list(QueryObject)
+2019-11-18 19:57:50,177 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/admin/showName.do", parameters={}
+2019-11-18 19:57:50,178 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.LoginController#showName(HttpSession)
+2019-11-18 19:57:50,179 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:57:50,179 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=admin, extend={})]
+2019-11-18 19:57:50,181 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:57:50,255 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:57:50,255 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a1631cc] was not registered for synchronization because synchronization is not active
+2019-11-18 19:57:50,318 DEBUG [SQL_CACHE] - Cache Hit Ratio [SQL_CACHE]: 0.0
+2019-11-18 19:57:50,501 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:57:50,501 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@1035532402 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will not be managed by Spring
+2019-11-18 19:57:50,502 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - ==>  Preparing: SELECT count(0) FROM t_user tu WHERE is_admin = 0 
+2019-11-18 19:57:50,502 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - ==> Parameters: 
+2019-11-18 19:57:50,504 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - <==      Total: 1
+2019-11-18 19:57:50,509 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - ==>  Preparing: select tu.uid, tu.username, tu.name, tu.birthday, tu.sex, tu.telephone, tu.email, tu.status, (select count(*) from t_favorite where uid=tu.uid) as favCount from t_user tu where is_admin=0 LIMIT ? 
+2019-11-18 19:57:50,510 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - ==> Parameters: 3(Integer)
+2019-11-18 19:57:50,531 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - <==      Total: 3
+2019-11-18 19:57:50,531 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a1631cc]
+2019-11-18 19:57:50,534 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:57:50,566 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={pageInfo=PageInfo{pageNum=1, pageSize=3, size=3, startRow=1, endRo (truncated)...]
+2019-11-18 19:57:50,609 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:57:57,952 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/user/list.do?currentPage=2&keyword=", parameters={masked}
+2019-11-18 19:57:57,953 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.UserController#list(QueryObject)
+2019-11-18 19:57:57,953 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:57:57,953 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8e2fb52] was not registered for synchronization because synchronization is not active
+2019-11-18 19:57:57,955 DEBUG [SQL_CACHE] - Cache Hit Ratio [SQL_CACHE]: 0.5
+2019-11-18 19:57:57,958 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:57:57,958 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@1136524240 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will not be managed by Spring
+2019-11-18 19:57:57,958 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - ==>  Preparing: SELECT count(0) FROM t_user tu WHERE is_admin = 0 
+2019-11-18 19:57:57,958 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - ==> Parameters: 
+2019-11-18 19:57:57,960 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - <==      Total: 1
+2019-11-18 19:57:57,960 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - ==>  Preparing: select tu.uid, tu.username, tu.name, tu.birthday, tu.sex, tu.telephone, tu.email, tu.status, (select count(*) from t_favorite where uid=tu.uid) as favCount from t_user tu where is_admin=0 LIMIT ?, ? 
+2019-11-18 19:57:57,961 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - ==> Parameters: 3(Integer), 3(Integer)
+2019-11-18 19:57:57,964 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - <==      Total: 3
+2019-11-18 19:57:57,964 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8e2fb52]
+2019-11-18 19:57:57,965 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:57:57,965 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={pageInfo=PageInfo{pageNum=2, pageSize=3, size=3, startRow=4, endRo (truncated)...]
+2019-11-18 19:57:57,966 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:57:58,871 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/user/list.do?currentPage=3&keyword=", parameters={masked}
+2019-11-18 19:57:58,872 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.UserController#list(QueryObject)
+2019-11-18 19:57:58,873 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:57:58,873 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20605e8e] was not registered for synchronization because synchronization is not active
+2019-11-18 19:57:58,874 DEBUG [SQL_CACHE] - Cache Hit Ratio [SQL_CACHE]: 0.6666666666666666
+2019-11-18 19:57:58,876 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:57:58,877 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@129510393 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will not be managed by Spring
+2019-11-18 19:57:58,877 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - ==>  Preparing: SELECT count(0) FROM t_user tu WHERE is_admin = 0 
+2019-11-18 19:57:58,877 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - ==> Parameters: 
+2019-11-18 19:57:58,878 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - <==      Total: 1
+2019-11-18 19:57:58,879 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - ==>  Preparing: select tu.uid, tu.username, tu.name, tu.birthday, tu.sex, tu.telephone, tu.email, tu.status, (select count(*) from t_favorite where uid=tu.uid) as favCount from t_user tu where is_admin=0 LIMIT ?, ? 
+2019-11-18 19:57:58,879 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - ==> Parameters: 6(Integer), 3(Integer)
+2019-11-18 19:57:58,882 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - <==      Total: 3
+2019-11-18 19:57:58,883 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20605e8e]
+2019-11-18 19:57:58,883 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:57:58,884 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={pageInfo=PageInfo{pageNum=3, pageSize=3, size=3, startRow=7, endRo (truncated)...]
+2019-11-18 19:57:58,885 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:57:59,500 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/user/list.do?currentPage=4&keyword=", parameters={masked}
+2019-11-18 19:57:59,501 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.UserController#list(QueryObject)
+2019-11-18 19:57:59,502 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:57:59,502 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@648a3924] was not registered for synchronization because synchronization is not active
+2019-11-18 19:57:59,504 DEBUG [SQL_CACHE] - Cache Hit Ratio [SQL_CACHE]: 0.75
+2019-11-18 19:57:59,508 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:57:59,508 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@754862032 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will not be managed by Spring
+2019-11-18 19:57:59,509 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - ==>  Preparing: SELECT count(0) FROM t_user tu WHERE is_admin = 0 
+2019-11-18 19:57:59,509 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - ==> Parameters: 
+2019-11-18 19:57:59,510 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - <==      Total: 1
+2019-11-18 19:57:59,511 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - ==>  Preparing: select tu.uid, tu.username, tu.name, tu.birthday, tu.sex, tu.telephone, tu.email, tu.status, (select count(*) from t_favorite where uid=tu.uid) as favCount from t_user tu where is_admin=0 LIMIT ?, ? 
+2019-11-18 19:57:59,512 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - ==> Parameters: 9(Integer), 3(Integer)
+2019-11-18 19:57:59,515 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - <==      Total: 3
+2019-11-18 19:57:59,516 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@648a3924]
+2019-11-18 19:57:59,517 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:57:59,517 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={pageInfo=PageInfo{pageNum=4, pageSize=3, size=3, startRow=10, endR (truncated)...]
+2019-11-18 19:57:59,519 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:58:00,974 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/user/list.do?currentPage=1&keyword=", parameters={masked}
+2019-11-18 19:58:00,974 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.UserController#list(QueryObject)
+2019-11-18 19:58:00,975 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:58:00,975 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c500c52] was not registered for synchronization because synchronization is not active
+2019-11-18 19:58:00,976 DEBUG [SQL_CACHE] - Cache Hit Ratio [SQL_CACHE]: 0.8
+2019-11-18 19:58:00,979 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:58:00,979 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@225248873 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will not be managed by Spring
+2019-11-18 19:58:00,979 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - ==>  Preparing: SELECT count(0) FROM t_user tu WHERE is_admin = 0 
+2019-11-18 19:58:00,980 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - ==> Parameters: 
+2019-11-18 19:58:00,981 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - <==      Total: 1
+2019-11-18 19:58:00,984 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - ==>  Preparing: select tu.uid, tu.username, tu.name, tu.birthday, tu.sex, tu.telephone, tu.email, tu.status, (select count(*) from t_favorite where uid=tu.uid) as favCount from t_user tu where is_admin=0 LIMIT ? 
+2019-11-18 19:58:00,985 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - ==> Parameters: 3(Integer)
+2019-11-18 19:58:00,989 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - <==      Total: 3
+2019-11-18 19:58:00,989 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c500c52]
+2019-11-18 19:58:00,990 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:58:00,990 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={pageInfo=PageInfo{pageNum=1, pageSize=3, size=3, startRow=1, endRo (truncated)...]
+2019-11-18 19:58:00,993 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:58:01,661 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - Before cleanup stats (total=6, active=0, idle=6, waiting=0)
+2019-11-18 19:58:01,661 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - After cleanup  stats (total=6, active=0, idle=6, waiting=0)
+2019-11-18 19:58:02,438 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/user/list.do?currentPage=6&keyword=", parameters={masked}
+2019-11-18 19:58:02,438 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.UserController#list(QueryObject)
+2019-11-18 19:58:02,440 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:58:02,440 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@510114bd] was not registered for synchronization because synchronization is not active
+2019-11-18 19:58:02,441 DEBUG [SQL_CACHE] - Cache Hit Ratio [SQL_CACHE]: 0.8333333333333334
+2019-11-18 19:58:02,444 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:58:02,444 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@1874961242 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will not be managed by Spring
+2019-11-18 19:58:02,445 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - ==>  Preparing: SELECT count(0) FROM t_user tu WHERE is_admin = 0 
+2019-11-18 19:58:02,445 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - ==> Parameters: 
+2019-11-18 19:58:02,446 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - <==      Total: 1
+2019-11-18 19:58:02,447 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - ==>  Preparing: select tu.uid, tu.username, tu.name, tu.birthday, tu.sex, tu.telephone, tu.email, tu.status, (select count(*) from t_favorite where uid=tu.uid) as favCount from t_user tu where is_admin=0 LIMIT ?, ? 
+2019-11-18 19:58:02,447 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - ==> Parameters: 15(Integer), 3(Integer)
+2019-11-18 19:58:02,450 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - <==      Total: 1
+2019-11-18 19:58:02,450 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@510114bd]
+2019-11-18 19:58:02,450 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:58:02,451 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={pageInfo=PageInfo{pageNum=6, pageSize=3, size=1, startRow=16, endR (truncated)...]
+2019-11-18 19:58:02,454 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:58:09,017 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/user/list.do?currentPage=5&keyword=", parameters={masked}
+2019-11-18 19:58:09,018 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.UserController#list(QueryObject)
+2019-11-18 19:58:09,020 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:58:09,020 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5359a4fc] was not registered for synchronization because synchronization is not active
+2019-11-18 19:58:09,021 DEBUG [SQL_CACHE] - Cache Hit Ratio [SQL_CACHE]: 0.8571428571428571
+2019-11-18 19:58:09,028 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:58:09,028 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@329256183 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will not be managed by Spring
+2019-11-18 19:58:09,028 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - ==>  Preparing: SELECT count(0) FROM t_user tu WHERE is_admin = 0 
+2019-11-18 19:58:09,029 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - ==> Parameters: 
+2019-11-18 19:58:09,033 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - <==      Total: 1
+2019-11-18 19:58:09,036 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - ==>  Preparing: select tu.uid, tu.username, tu.name, tu.birthday, tu.sex, tu.telephone, tu.email, tu.status, (select count(*) from t_favorite where uid=tu.uid) as favCount from t_user tu where is_admin=0 LIMIT ?, ? 
+2019-11-18 19:58:09,036 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - ==> Parameters: 12(Integer), 3(Integer)
+2019-11-18 19:58:09,038 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - <==      Total: 3
+2019-11-18 19:58:09,039 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5359a4fc]
+2019-11-18 19:58:09,042 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:58:09,042 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={pageInfo=PageInfo{pageNum=5, pageSize=3, size=3, startRow=13, endR (truncated)...]
+2019-11-18 19:58:09,043 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:58:12,342 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/user/list.do?currentPage=1&keyword=", parameters={masked}
+2019-11-18 19:58:12,342 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.UserController#list(QueryObject)
+2019-11-18 19:58:12,343 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:58:12,343 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@279d8d67] was not registered for synchronization because synchronization is not active
+2019-11-18 19:58:12,344 DEBUG [SQL_CACHE] - Cache Hit Ratio [SQL_CACHE]: 0.875
+2019-11-18 19:58:12,347 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:58:12,348 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@856622398 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will not be managed by Spring
+2019-11-18 19:58:12,348 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - ==>  Preparing: SELECT count(0) FROM t_user tu WHERE is_admin = 0 
+2019-11-18 19:58:12,348 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - ==> Parameters: 
+2019-11-18 19:58:12,349 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll_COUNT] - <==      Total: 1
+2019-11-18 19:58:12,350 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - ==>  Preparing: select tu.uid, tu.username, tu.name, tu.birthday, tu.sex, tu.telephone, tu.email, tu.status, (select count(*) from t_favorite where uid=tu.uid) as favCount from t_user tu where is_admin=0 LIMIT ? 
+2019-11-18 19:58:12,351 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - ==> Parameters: 3(Integer)
+2019-11-18 19:58:12,355 DEBUG [com.travel.one.four.mapper.TUserMapper.findAll] - <==      Total: 3
+2019-11-18 19:58:12,356 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@279d8d67]
+2019-11-18 19:58:12,356 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:58:12,357 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={pageInfo=PageInfo{pageNum=1, pageSize=3, size=3, startRow=1, endRo (truncated)...]
+2019-11-18 19:58:12,360 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:58:20,222 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/favorite/userInfo.do?uid=2", parameters={masked}
+2019-11-18 19:58:20,223 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.FavoriteController#userInfo(Integer)
+2019-11-18 19:58:20,227 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/favorite/routes.do?uid=2&currentPage=1&keyword=", parameters={masked}
+2019-11-18 19:58:20,228 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.FavoriteController#routes(ExtendQueryObject)
+2019-11-18 19:58:20,264 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/admin/showName.do", parameters={}
+2019-11-18 19:58:20,265 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.LoginController#showName(HttpSession)
+2019-11-18 19:58:20,265 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:58:20,265 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=admin, extend={})]
+2019-11-18 19:58:20,266 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Creating new transaction with name [com.travel.one.four.service.impl.TUserServiceImpl.findByUid]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2019-11-18 19:58:20,269 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Acquired Connection [HikariProxyConnection@1464698240 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] for JDBC transaction
+2019-11-18 19:58:20,269 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:58:20,273 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Creating new transaction with name [com.travel.one.four.service.impl.TFavoriteServiceImpl.findByUid]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2019-11-18 19:58:20,278 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Acquired Connection [HikariProxyConnection@1362892891 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] for JDBC transaction
+2019-11-18 19:58:20,289 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Setting JDBC Connection [HikariProxyConnection@1362892891 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] read-only
+2019-11-18 19:58:20,295 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Setting JDBC Connection [HikariProxyConnection@1464698240 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] read-only
+2019-11-18 19:58:20,401 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Switching JDBC Connection [HikariProxyConnection@1464698240 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] to manual commit
+2019-11-18 19:58:20,401 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Switching JDBC Connection [HikariProxyConnection@1362892891 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] to manual commit
+2019-11-18 19:58:20,401 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:58:20,401 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:58:20,402 DEBUG [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@493d75e7]
+2019-11-18 19:58:20,402 DEBUG [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27417ea7]
+2019-11-18 19:58:20,407 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@1464698240 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will be managed by Spring
+2019-11-18 19:58:20,408 DEBUG [com.travel.one.four.mapper.TUserMapper.findByUid] - ==>  Preparing: select tu.uid, tu.username, tu.name, tu.birthday, tu.sex, tu.telephone, tu.email, tu.status, (select count(*) from t_favorite where uid=tu.uid) as favCount from t_user tu where tu.uid=? 
+2019-11-18 19:58:20,408 DEBUG [com.travel.one.four.mapper.TUserMapper.findByUid] - ==> Parameters: 2(Integer)
+2019-11-18 19:58:20,411 DEBUG [SQL_CACHE] - Cache Hit Ratio [SQL_CACHE]: 0.7777777777777778
+2019-11-18 19:58:20,411 DEBUG [com.travel.one.four.mapper.TUserMapper.findByUid] - <==      Total: 1
+2019-11-18 19:58:20,413 DEBUG [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27417ea7]
+2019-11-18 19:58:20,414 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27417ea7]
+2019-11-18 19:58:20,415 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27417ea7]
+2019-11-18 19:58:20,415 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27417ea7]
+2019-11-18 19:58:20,415 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Initiating transaction commit
+2019-11-18 19:58:20,415 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Committing JDBC transaction on Connection [HikariProxyConnection@1464698240 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1]
+2019-11-18 19:58:20,417 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1464698240 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1]
+2019-11-18 19:58:20,418 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Releasing JDBC Connection [HikariProxyConnection@1464698240 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] after transaction
+2019-11-18 19:58:20,418 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:58:20,419 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={user=TUser(uid=2, username=蝙蝠侠, password=null, name=Bon, birthday= (truncated)...]
+2019-11-18 19:58:20,420 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@1362892891 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] will be managed by Spring
+2019-11-18 19:58:20,420 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindByUid_COUNT] - ==>  Preparing: SELECT count(0) FROM t_favorite tf LEFT JOIN t_route tr ON tf.rid = tr.rid LEFT JOIN t_companydata tc ON tr.sid = tc.sid WHERE tf.uid = ? 
+2019-11-18 19:58:20,421 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindByUid_COUNT] - ==> Parameters: 2(Integer)
+2019-11-18 19:58:20,424 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:58:20,424 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindByUid_COUNT] - <==      Total: 1
+2019-11-18 19:58:20,426 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindByUid] - ==>  Preparing: SELECT tr.rid, tr.rname, tr.price, tr.routeIntroduce, tr.rflag,tr.rdate, tr.rimage, tc.sid,tc.sname FROM t_favorite tf LEFT JOIN t_route tr on tf.rid=tr.rid LEFT JOIN t_companydata tc on tr.sid=tc.sid WHERE tf.uid = ? LIMIT ? 
+2019-11-18 19:58:20,427 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindByUid] - ==> Parameters: 2(Integer), 6(Integer)
+2019-11-18 19:58:20,433 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindByUid] - <==      Total: 6
+2019-11-18 19:58:20,433 DEBUG [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@493d75e7]
+2019-11-18 19:58:20,433 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@493d75e7]
+2019-11-18 19:58:20,433 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@493d75e7]
+2019-11-18 19:58:20,433 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@493d75e7]
+2019-11-18 19:58:20,433 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Initiating transaction commit
+2019-11-18 19:58:20,433 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Committing JDBC transaction on Connection [HikariProxyConnection@1362892891 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5]
+2019-11-18 19:58:20,435 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1362892891 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5]
+2019-11-18 19:58:20,435 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Releasing JDBC Connection [HikariProxyConnection@1362892891 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] after transaction
+2019-11-18 19:58:20,436 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:58:20,564 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={pageInfo=PageInfo{pageNum=1, pageSize=6, size=6, startRow=1, endRo (truncated)...]
+2019-11-18 19:58:20,573 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:58:31,662 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - Before cleanup stats (total=6, active=0, idle=6, waiting=0)
+2019-11-18 19:58:31,662 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - After cleanup  stats (total=6, active=0, idle=6, waiting=0)
+2019-11-18 19:58:38,709 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/favorite/userInfo.do?uid=2", parameters={masked}
+2019-11-18 19:58:38,709 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/favorite/routes.do?uid=2&currentPage=1&keyword=%E8%B1%AA", parameters={masked}
+2019-11-18 19:58:38,711 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.FavoriteController#userInfo(Integer)
+2019-11-18 19:58:38,711 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.FavoriteController#routes(ExtendQueryObject)
+2019-11-18 19:58:38,711 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Creating new transaction with name [com.travel.one.four.service.impl.TUserServiceImpl.findByUid]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2019-11-18 19:58:38,712 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Creating new transaction with name [com.travel.one.four.service.impl.TFavoriteServiceImpl.findByUid]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2019-11-18 19:58:38,713 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Acquired Connection [HikariProxyConnection@1764313677 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] for JDBC transaction
+2019-11-18 19:58:38,713 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Setting JDBC Connection [HikariProxyConnection@1764313677 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] read-only
+2019-11-18 19:58:38,713 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Acquired Connection [HikariProxyConnection@1520823347 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] for JDBC transaction
+2019-11-18 19:58:38,713 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Setting JDBC Connection [HikariProxyConnection@1520823347 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] read-only
+2019-11-18 19:58:38,713 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Switching JDBC Connection [HikariProxyConnection@1764313677 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] to manual commit
+2019-11-18 19:58:38,713 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Switching JDBC Connection [HikariProxyConnection@1520823347 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] to manual commit
+2019-11-18 19:58:38,713 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:58:38,713 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:58:38,714 DEBUG [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7510c4af]
+2019-11-18 19:58:38,714 DEBUG [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42f43afc]
+2019-11-18 19:58:38,714 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@1520823347 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will be managed by Spring
+2019-11-18 19:58:38,714 DEBUG [com.travel.one.four.mapper.TUserMapper.findByUid] - ==>  Preparing: select tu.uid, tu.username, tu.name, tu.birthday, tu.sex, tu.telephone, tu.email, tu.status, (select count(*) from t_favorite where uid=tu.uid) as favCount from t_user tu where tu.uid=? 
+2019-11-18 19:58:38,715 DEBUG [com.travel.one.four.mapper.TUserMapper.findByUid] - ==> Parameters: 2(Integer)
+2019-11-18 19:58:38,716 DEBUG [SQL_CACHE] - Cache Hit Ratio [SQL_CACHE]: 0.8
+2019-11-18 19:58:38,716 DEBUG [com.travel.one.four.mapper.TUserMapper.findByUid] - <==      Total: 1
+2019-11-18 19:58:38,717 DEBUG [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7510c4af]
+2019-11-18 19:58:38,717 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7510c4af]
+2019-11-18 19:58:38,717 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7510c4af]
+2019-11-18 19:58:38,717 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7510c4af]
+2019-11-18 19:58:38,717 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Initiating transaction commit
+2019-11-18 19:58:38,717 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Committing JDBC transaction on Connection [HikariProxyConnection@1520823347 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1]
+2019-11-18 19:58:38,718 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1520823347 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1]
+2019-11-18 19:58:38,718 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Releasing JDBC Connection [HikariProxyConnection@1520823347 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] after transaction
+2019-11-18 19:58:38,719 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:58:38,719 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={user=TUser(uid=2, username=蝙蝠侠, password=null, name=Bon, birthday= (truncated)...]
+2019-11-18 19:58:38,720 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:58:38,736 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@1764313677 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] will be managed by Spring
+2019-11-18 19:58:38,736 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindByUid_COUNT] - ==>  Preparing: SELECT count(0) FROM t_favorite tf LEFT JOIN t_route tr ON tf.rid = tr.rid LEFT JOIN t_companydata tc ON tr.sid = tc.sid WHERE rname LIKE concat('%', ?, '%') AND tf.uid = ? 
+2019-11-18 19:58:38,737 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindByUid_COUNT] - ==> Parameters: 豪(String), 2(Integer)
+2019-11-18 19:58:38,778 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/admin/showName.do", parameters={}
+2019-11-18 19:58:38,779 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.LoginController#showName(HttpSession)
+2019-11-18 19:58:38,781 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:58:38,782 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=admin, extend={})]
+2019-11-18 19:58:38,783 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:58:38,831 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindByUid_COUNT] - <==      Total: 1
+2019-11-18 19:58:38,832 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindByUid] - ==>  Preparing: SELECT tr.rid, tr.rname, tr.price, tr.routeIntroduce, tr.rflag,tr.rdate, tr.rimage, tc.sid,tc.sname FROM t_favorite tf LEFT JOIN t_route tr on tf.rid=tr.rid LEFT JOIN t_companydata tc on tr.sid=tc.sid WHERE rname like concat('%',?,'%') and tf.uid = ? LIMIT ? 
+2019-11-18 19:58:38,832 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindByUid] - ==> Parameters: 豪(String), 2(Integer), 6(Integer)
+2019-11-18 19:58:38,835 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindByUid] - <==      Total: 3
+2019-11-18 19:58:38,835 DEBUG [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42f43afc]
+2019-11-18 19:58:38,835 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42f43afc]
+2019-11-18 19:58:38,835 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42f43afc]
+2019-11-18 19:58:38,835 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42f43afc]
+2019-11-18 19:58:38,835 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Initiating transaction commit
+2019-11-18 19:58:38,835 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Committing JDBC transaction on Connection [HikariProxyConnection@1764313677 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5]
+2019-11-18 19:58:38,836 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1764313677 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5]
+2019-11-18 19:58:38,836 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Releasing JDBC Connection [HikariProxyConnection@1764313677 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] after transaction
+2019-11-18 19:58:38,837 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:58:38,837 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={pageInfo=PageInfo{pageNum=1, pageSize=6, size=3, startRow=1, endRo (truncated)...]
+2019-11-18 19:58:38,839 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:58:55,444 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/company/cInfo.do?sid=1", parameters={masked}
+2019-11-18 19:58:55,445 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.CompanyDataController#cInfo(Integer)
+2019-11-18 19:58:55,450 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Creating new transaction with name [com.travel.one.four.service.impl.TCompanyDataServiceImpl.findBySid]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2019-11-18 19:58:55,451 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Acquired Connection [HikariProxyConnection@1605692577 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] for JDBC transaction
+2019-11-18 19:58:55,451 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Setting JDBC Connection [HikariProxyConnection@1605692577 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] read-only
+2019-11-18 19:58:55,452 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Switching JDBC Connection [HikariProxyConnection@1605692577 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] to manual commit
+2019-11-18 19:58:55,453 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:58:55,453 DEBUG [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ec1d633]
+2019-11-18 19:58:55,454 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@1605692577 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will be managed by Spring
+2019-11-18 19:58:55,454 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findBySid] - ==>  Preparing: select tc.sid, tc.sname, tc.email, tc.consphone, tc.address, tc.status, tc.introduction, (select count(*) from t_route where sid=tc.sid) as favCount from t_companydata tc where tc.sid=? 
+2019-11-18 19:58:55,454 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findBySid] - ==> Parameters: 1(Integer)
+2019-11-18 19:58:55,456 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/company/detailList.do?sid=1&currentPage=1&keyword=", parameters={masked}
+2019-11-18 19:58:55,456 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.CompanyDataController#cInfo(ExtendQueryObject)
+2019-11-18 19:58:55,457 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findBySid] - <==      Total: 1
+2019-11-18 19:58:55,458 DEBUG [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ec1d633]
+2019-11-18 19:58:55,458 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ec1d633]
+2019-11-18 19:58:55,458 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:58:55,458 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47ca4cc7] was not registered for synchronization because synchronization is not active
+2019-11-18 19:58:55,458 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ec1d633]
+2019-11-18 19:58:55,458 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ec1d633]
+2019-11-18 19:58:55,460 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Initiating transaction commit
+2019-11-18 19:58:55,460 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Committing JDBC transaction on Connection [HikariProxyConnection@1605692577 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1]
+2019-11-18 19:58:55,461 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1605692577 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1]
+2019-11-18 19:58:55,461 DEBUG [SQL_CACHE] - Cache Hit Ratio [SQL_CACHE]: 0.7272727272727273
+2019-11-18 19:58:55,462 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Releasing JDBC Connection [HikariProxyConnection@1605692577 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] after transaction
+2019-11-18 19:58:55,465 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:58:55,465 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@1472233408 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] will not be managed by Spring
+2019-11-18 19:58:55,466 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid_COUNT] - ==>  Preparing: SELECT count(0) FROM t_companydata tc, t_route tr WHERE tr.sid = ? AND tr.sid = tc.sid 
+2019-11-18 19:58:55,466 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid_COUNT] - ==> Parameters: 1(Integer)
+2019-11-18 19:58:55,466 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:58:55,466 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={cInfo=TCompanydata(sid=1, sname=小周程序员, password=null, email=123456 (truncated)...]
+2019-11-18 19:58:55,470 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid_COUNT] - <==      Total: 1
+2019-11-18 19:58:55,472 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid] - ==>  Preparing: SELECT tr.rid, tr.rname, tr.price, tr.routeIntroduce, tr.rflag, tr.rdate,tr.cid, tr.rimage, tr.sid FROM t_companydata tc,t_route tr WHERE tr.sid = ? and tr.sid=tc.sid LIMIT ? 
+2019-11-18 19:58:55,472 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid] - ==> Parameters: 1(Integer), 6(Integer)
+2019-11-18 19:58:55,473 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:58:55,481 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid] - <==      Total: 6
+2019-11-18 19:58:55,482 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47ca4cc7]
+2019-11-18 19:58:55,482 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:58:55,489 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={pageInfo=PageInfo{pageNum=1, pageSize=6, size=6, startRow=1, endRo (truncated)...]
+2019-11-18 19:58:55,496 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/admin/showName.do", parameters={}
+2019-11-18 19:58:55,496 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.LoginController#showName(HttpSession)
+2019-11-18 19:58:55,497 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:58:55,498 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:58:55,498 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=admin, extend={})]
+2019-11-18 19:58:55,500 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:59:01,664 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - Before cleanup stats (total=6, active=0, idle=6, waiting=0)
+2019-11-18 19:59:01,664 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - After cleanup  stats (total=6, active=0, idle=6, waiting=0)
+2019-11-18 19:59:06,348 DEBUG [org.springframework.web.servlet.DispatcherServlet] - PUT "/company/ban.do", parameters={masked}
+2019-11-18 19:59:06,349 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.CompanyDataController#ban(Integer, Integer)
+2019-11-18 19:59:06,349 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:59:06,349 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f1136dc] was not registered for synchronization because synchronization is not active
+2019-11-18 19:59:06,351 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:59:06,352 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@7266095 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will not be managed by Spring
+2019-11-18 19:59:06,352 DEBUG [com.travel.one.four.mapper.TRouteMapper.updateFlagByRid] - ==>  Preparing: update t_route SET rflag = 0 where rid=? 
+2019-11-18 19:59:06,352 DEBUG [com.travel.one.four.mapper.TRouteMapper.updateFlagByRid] - ==> Parameters: 1(Integer)
+2019-11-18 19:59:06,415 DEBUG [com.travel.one.four.mapper.TRouteMapper.updateFlagByRid] - <==    Updates: 1
+2019-11-18 19:59:06,415 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f1136dc]
+2019-11-18 19:59:06,416 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json, application/*+json]
+2019-11-18 19:59:06,416 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={})]
+2019-11-18 19:59:06,416 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:59:08,031 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/company/detailList.do?sid=1&currentPage=1&keyword=", parameters={masked}
+2019-11-18 19:59:08,032 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.CompanyDataController#cInfo(ExtendQueryObject)
+2019-11-18 19:59:08,032 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:59:08,032 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e781395] was not registered for synchronization because synchronization is not active
+2019-11-18 19:59:08,035 DEBUG [SQL_CACHE] - Cache Hit Ratio [SQL_CACHE]: 0.75
+2019-11-18 19:59:08,037 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:59:08,038 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@2111153149 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will not be managed by Spring
+2019-11-18 19:59:08,038 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid_COUNT] - ==>  Preparing: SELECT count(0) FROM t_companydata tc, t_route tr WHERE tr.sid = ? AND tr.sid = tc.sid 
+2019-11-18 19:59:08,038 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid_COUNT] - ==> Parameters: 1(Integer)
+2019-11-18 19:59:08,039 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid_COUNT] - <==      Total: 1
+2019-11-18 19:59:08,040 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid] - ==>  Preparing: SELECT tr.rid, tr.rname, tr.price, tr.routeIntroduce, tr.rflag, tr.rdate,tr.cid, tr.rimage, tr.sid FROM t_companydata tc,t_route tr WHERE tr.sid = ? and tr.sid=tc.sid LIMIT ? 
+2019-11-18 19:59:08,041 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid] - ==> Parameters: 1(Integer), 6(Integer)
+2019-11-18 19:59:08,050 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid] - <==      Total: 6
+2019-11-18 19:59:08,051 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e781395]
+2019-11-18 19:59:08,051 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:59:08,052 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={pageInfo=PageInfo{pageNum=1, pageSize=6, size=6, startRow=1, endRo (truncated)...]
+2019-11-18 19:59:08,057 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:59:12,629 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/company/list.do?currentPage=1&keyword=", parameters={masked}
+2019-11-18 19:59:12,631 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.CompanyDataController#list(QueryObject)
+2019-11-18 19:59:12,638 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Creating new transaction with name [com.travel.one.four.service.impl.TCompanyDataServiceImpl.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2019-11-18 19:59:12,639 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Acquired Connection [HikariProxyConnection@2045159163 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] for JDBC transaction
+2019-11-18 19:59:12,639 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Setting JDBC Connection [HikariProxyConnection@2045159163 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] read-only
+2019-11-18 19:59:12,640 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Switching JDBC Connection [HikariProxyConnection@2045159163 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] to manual commit
+2019-11-18 19:59:12,641 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:59:12,641 DEBUG [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b78aa6f]
+2019-11-18 19:59:12,643 DEBUG [SQL_CACHE] - Cache Hit Ratio [SQL_CACHE]: 0.6923076923076923
+2019-11-18 19:59:12,656 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@2045159163 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will be managed by Spring
+2019-11-18 19:59:12,656 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findAll_COUNT] - ==>  Preparing: SELECT count(0) FROM t_companydata tc 
+2019-11-18 19:59:12,656 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findAll_COUNT] - ==> Parameters: 
+2019-11-18 19:59:12,662 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findAll_COUNT] - <==      Total: 1
+2019-11-18 19:59:12,663 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findAll] - ==>  Preparing: select tc.sid, tc.sname, tc.email, tc.consphone, tc.address, tc.status, tc.introduction, (select count(*) from t_route where sid=tc.sid) as favCount from t_companydata tc order by favCount desc LIMIT ? 
+2019-11-18 19:59:12,663 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findAll] - ==> Parameters: 3(Integer)
+2019-11-18 19:59:12,665 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findAll] - <==      Total: 3
+2019-11-18 19:59:12,666 DEBUG [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b78aa6f]
+2019-11-18 19:59:12,666 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b78aa6f]
+2019-11-18 19:59:12,666 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b78aa6f]
+2019-11-18 19:59:12,666 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b78aa6f]
+2019-11-18 19:59:12,666 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Initiating transaction commit
+2019-11-18 19:59:12,666 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Committing JDBC transaction on Connection [HikariProxyConnection@2045159163 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1]
+2019-11-18 19:59:12,683 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@2045159163 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1]
+2019-11-18 19:59:12,684 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Releasing JDBC Connection [HikariProxyConnection@2045159163 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] after transaction
+2019-11-18 19:59:12,684 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:59:12,685 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={pageInfo=PageInfo{pageNum=1, pageSize=3, size=3, startRow=1, endRo (truncated)...]
+2019-11-18 19:59:12,687 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/admin/showName.do", parameters={}
+2019-11-18 19:59:12,687 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:59:12,687 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.LoginController#showName(HttpSession)
+2019-11-18 19:59:12,690 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:59:12,690 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=admin, extend={})]
+2019-11-18 19:59:12,692 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:59:16,870 DEBUG [org.springframework.web.servlet.DispatcherServlet] - PUT "/company/change.do", parameters={masked}
+2019-11-18 19:59:16,871 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.CompanyDataController#stop(Integer, Integer)
+2019-11-18 19:59:16,872 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:59:16,872 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49a23bcc] was not registered for synchronization because synchronization is not active
+2019-11-18 19:59:16,872 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:59:16,873 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@2122356694 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] will not be managed by Spring
+2019-11-18 19:59:16,873 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.startBySid] - ==>  Preparing: update t_companydata set status='Y' where sid=? 
+2019-11-18 19:59:16,874 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.startBySid] - ==> Parameters: 3(Integer)
+2019-11-18 19:59:17,019 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.startBySid] - <==    Updates: 1
+2019-11-18 19:59:17,019 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49a23bcc]
+2019-11-18 19:59:17,019 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:59:17,019 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={})]
+2019-11-18 19:59:17,020 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:59:18,081 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/company/list.do?currentPage=1", parameters={masked}
+2019-11-18 19:59:18,081 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.CompanyDataController#list(QueryObject)
+2019-11-18 19:59:18,082 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Creating new transaction with name [com.travel.one.four.service.impl.TCompanyDataServiceImpl.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2019-11-18 19:59:18,084 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Acquired Connection [HikariProxyConnection@1628793965 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] for JDBC transaction
+2019-11-18 19:59:18,084 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Setting JDBC Connection [HikariProxyConnection@1628793965 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] read-only
+2019-11-18 19:59:18,084 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Switching JDBC Connection [HikariProxyConnection@1628793965 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] to manual commit
+2019-11-18 19:59:18,085 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:59:18,085 DEBUG [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17f440c7]
+2019-11-18 19:59:18,087 DEBUG [SQL_CACHE] - Cache Hit Ratio [SQL_CACHE]: 0.7142857142857143
+2019-11-18 19:59:18,090 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@1628793965 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will be managed by Spring
+2019-11-18 19:59:18,090 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findAll_COUNT] - ==>  Preparing: SELECT count(0) FROM t_companydata tc 
+2019-11-18 19:59:18,090 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findAll_COUNT] - ==> Parameters: 
+2019-11-18 19:59:18,092 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findAll_COUNT] - <==      Total: 1
+2019-11-18 19:59:18,093 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findAll] - ==>  Preparing: select tc.sid, tc.sname, tc.email, tc.consphone, tc.address, tc.status, tc.introduction, (select count(*) from t_route where sid=tc.sid) as favCount from t_companydata tc order by favCount desc LIMIT ? 
+2019-11-18 19:59:18,098 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findAll] - ==> Parameters: 3(Integer)
+2019-11-18 19:59:18,100 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findAll] - <==      Total: 3
+2019-11-18 19:59:18,100 DEBUG [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17f440c7]
+2019-11-18 19:59:18,100 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17f440c7]
+2019-11-18 19:59:18,100 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17f440c7]
+2019-11-18 19:59:18,100 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17f440c7]
+2019-11-18 19:59:18,101 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Initiating transaction commit
+2019-11-18 19:59:18,101 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Committing JDBC transaction on Connection [HikariProxyConnection@1628793965 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1]
+2019-11-18 19:59:18,101 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1628793965 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1]
+2019-11-18 19:59:18,102 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Releasing JDBC Connection [HikariProxyConnection@1628793965 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] after transaction
+2019-11-18 19:59:18,102 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:59:18,102 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={pageInfo=PageInfo{pageNum=1, pageSize=3, size=3, startRow=1, endRo (truncated)...]
+2019-11-18 19:59:18,103 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:59:23,019 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/company/cInfo.do?sid=3", parameters={masked}
+2019-11-18 19:59:23,020 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.CompanyDataController#cInfo(Integer)
+2019-11-18 19:59:23,021 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Creating new transaction with name [com.travel.one.four.service.impl.TCompanyDataServiceImpl.findBySid]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2019-11-18 19:59:23,022 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Acquired Connection [HikariProxyConnection@778705107 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] for JDBC transaction
+2019-11-18 19:59:23,022 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Setting JDBC Connection [HikariProxyConnection@778705107 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] read-only
+2019-11-18 19:59:23,022 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/company/detailList.do?sid=3&currentPage=1&keyword=", parameters={masked}
+2019-11-18 19:59:23,022 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Switching JDBC Connection [HikariProxyConnection@778705107 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] to manual commit
+2019-11-18 19:59:23,023 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.CompanyDataController#cInfo(ExtendQueryObject)
+2019-11-18 19:59:23,023 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:59:23,023 DEBUG [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78013bac]
+2019-11-18 19:59:23,023 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@778705107 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will be managed by Spring
+2019-11-18 19:59:23,023 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findBySid] - ==>  Preparing: select tc.sid, tc.sname, tc.email, tc.consphone, tc.address, tc.status, tc.introduction, (select count(*) from t_route where sid=tc.sid) as favCount from t_companydata tc where tc.sid=? 
+2019-11-18 19:59:23,024 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:59:23,024 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findBySid] - ==> Parameters: 3(Integer)
+2019-11-18 19:59:23,024 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66234078] was not registered for synchronization because synchronization is not active
+2019-11-18 19:59:23,025 DEBUG [SQL_CACHE] - Cache Hit Ratio [SQL_CACHE]: 0.7333333333333333
+2019-11-18 19:59:23,025 DEBUG [com.travel.one.four.mapper.TCompanydataMapper.findBySid] - <==      Total: 1
+2019-11-18 19:59:23,025 DEBUG [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78013bac]
+2019-11-18 19:59:23,026 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78013bac]
+2019-11-18 19:59:23,026 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78013bac]
+2019-11-18 19:59:23,026 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78013bac]
+2019-11-18 19:59:23,026 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Initiating transaction commit
+2019-11-18 19:59:23,026 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Committing JDBC transaction on Connection [HikariProxyConnection@778705107 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1]
+2019-11-18 19:59:23,030 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@778705107 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1]
+2019-11-18 19:59:23,031 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Releasing JDBC Connection [HikariProxyConnection@778705107 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] after transaction
+2019-11-18 19:59:23,031 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:59:23,035 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@1129386273 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] will not be managed by Spring
+2019-11-18 19:59:23,036 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid_COUNT] - ==>  Preparing: SELECT count(0) FROM t_companydata tc, t_route tr WHERE tr.sid = ? AND tr.sid = tc.sid 
+2019-11-18 19:59:23,036 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:59:23,036 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={cInfo=TCompanydata(sid=3, sname=李四, password=null, email=123456@qq (truncated)...]
+2019-11-18 19:59:23,036 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid_COUNT] - ==> Parameters: 3(Integer)
+2019-11-18 19:59:23,037 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:59:23,040 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid_COUNT] - <==      Total: 1
+2019-11-18 19:59:23,041 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid] - ==>  Preparing: SELECT tr.rid, tr.rname, tr.price, tr.routeIntroduce, tr.rflag, tr.rdate,tr.cid, tr.rimage, tr.sid FROM t_companydata tc,t_route tr WHERE tr.sid = ? and tr.sid=tc.sid LIMIT ? 
+2019-11-18 19:59:23,041 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid] - ==> Parameters: 3(Integer), 6(Integer)
+2019-11-18 19:59:23,051 DEBUG [com.travel.one.four.mapper.TRouteMapper.pageFindBySid] - <==      Total: 6
+2019-11-18 19:59:23,052 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66234078]
+2019-11-18 19:59:23,053 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:59:23,053 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={pageInfo=PageInfo{pageNum=1, pageSize=6, size=6, startRow=1, endRo (truncated)...]
+2019-11-18 19:59:23,056 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:59:23,101 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/admin/showName.do", parameters={}
+2019-11-18 19:59:23,101 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.LoginController#showName(HttpSession)
+2019-11-18 19:59:23,102 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:59:23,102 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=admin, extend={})]
+2019-11-18 19:59:23,103 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:59:27,065 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/admin/home.do", parameters={}
+2019-11-18 19:59:27,065 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.LoginController#home()
+2019-11-18 19:59:27,065 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:59:27,066 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72c8f118] was not registered for synchronization because synchronization is not active
+2019-11-18 19:59:27,066 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:59:27,067 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@1955305398 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will not be managed by Spring
+2019-11-18 19:59:27,067 DEBUG [com.travel.one.four.mapper.TUserMapper.findCount] - ==>  Preparing: SELECT count(*) as num from t_companydata UNION ALL SELECT count(*) from t_user UNION ALL SELECT count(*) from t_route UNION all SELECT count(*) from t_favorite UNION all SELECT count(*) from t_nav Union all select count(*) from t_user where status='Y' 
+2019-11-18 19:59:27,067 DEBUG [com.travel.one.four.mapper.TUserMapper.findCount] - ==> Parameters: 
+2019-11-18 19:59:27,076 DEBUG [com.travel.one.four.mapper.TUserMapper.findCount] - <==      Total: 6
+2019-11-18 19:59:27,077 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72c8f118]
+2019-11-18 19:59:27,078 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:59:27,078 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={count=Count(companyNum=6, userNum=17, routeNum=514, favoriteNum=29 (truncated)...]
+2019-11-18 19:59:27,078 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/nav/list.do", parameters={}
+2019-11-18 19:59:27,078 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.NavController#List()
+2019-11-18 19:59:27,079 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:59:27,080 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Creating new transaction with name [com.travel.one.four.service.impl.TNavServiceImpl.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2019-11-18 19:59:27,082 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Acquired Connection [HikariProxyConnection@354931846 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] for JDBC transaction
+2019-11-18 19:59:27,082 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Setting JDBC Connection [HikariProxyConnection@354931846 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] read-only
+2019-11-18 19:59:27,082 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Switching JDBC Connection [HikariProxyConnection@354931846 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] to manual commit
+2019-11-18 19:59:27,083 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:59:27,083 DEBUG [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63970a08]
+2019-11-18 19:59:27,084 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@354931846 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] will be managed by Spring
+2019-11-18 19:59:27,084 DEBUG [com.travel.one.four.mapper.TNavMapper.findAll] - ==>  Preparing: select tn.status,tn.cid,tn.cname,(select count(*) from t_route where tn.cid=cid) as favCount from t_nav tn 
+2019-11-18 19:59:27,084 DEBUG [com.travel.one.four.mapper.TNavMapper.findAll] - ==> Parameters: 
+2019-11-18 19:59:27,112 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/admin/showName.do", parameters={}
+2019-11-18 19:59:27,118 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.LoginController#showName(HttpSession)
+2019-11-18 19:59:27,118 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:59:27,119 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=admin, extend={})]
+2019-11-18 19:59:27,120 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:59:27,185 DEBUG [com.travel.one.four.mapper.TNavMapper.findAll] - <==      Total: 10
+2019-11-18 19:59:27,185 DEBUG [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63970a08]
+2019-11-18 19:59:27,185 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63970a08]
+2019-11-18 19:59:27,185 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63970a08]
+2019-11-18 19:59:27,185 DEBUG [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63970a08]
+2019-11-18 19:59:27,185 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Initiating transaction commit
+2019-11-18 19:59:27,185 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Committing JDBC transaction on Connection [HikariProxyConnection@354931846 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5]
+2019-11-18 19:59:27,186 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Resetting read-only flag of JDBC Connection [HikariProxyConnection@354931846 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5]
+2019-11-18 19:59:27,186 DEBUG [org.springframework.jdbc.datasource.DataSourceTransactionManager] - Releasing JDBC Connection [HikariProxyConnection@354931846 wrapping com.mysql.cj.jdbc.ConnectionImpl@51187d5] after transaction
+2019-11-18 19:59:27,187 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:59:27,187 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={navList=[TNav(cid=1, cname=交通的, status=0), TNav(cid=2, cname=酒店, s (truncated)...]
+2019-11-18 19:59:27,189 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:59:31,665 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - Before cleanup stats (total=6, active=0, idle=6, waiting=0)
+2019-11-18 19:59:31,665 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - After cleanup  stats (total=6, active=0, idle=6, waiting=0)
+2019-11-18 19:59:32,371 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/route/allInfo.do?currentPage=1&keyword=", parameters={masked}
+2019-11-18 19:59:32,371 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.RouteController#allInfo(QueryObject)
+2019-11-18 19:59:32,374 DEBUG [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-11-18 19:59:32,374 DEBUG [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@761192b0] was not registered for synchronization because synchronization is not active
+2019-11-18 19:59:32,376 DEBUG [SQL_CACHE] - Cache Hit Ratio [SQL_CACHE]: 0.6875
+2019-11-18 19:59:32,382 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - Fetching JDBC Connection from DataSource
+2019-11-18 19:59:32,382 DEBUG [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [HikariProxyConnection@1422145159 wrapping com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1] will not be managed by Spring
+2019-11-18 19:59:32,382 DEBUG [com.travel.one.four.mapper.TRouteMapper.findAllInfo_COUNT] - ==>  Preparing: SELECT count(0) FROM t_nav tn LEFT JOIN t_route tr ON tn.cid = tr.cid LEFT JOIN t_companydata tc ON tc.sid = tr.sid 
+2019-11-18 19:59:32,383 DEBUG [com.travel.one.four.mapper.TRouteMapper.findAllInfo_COUNT] - ==> Parameters: 
+2019-11-18 19:59:32,394 DEBUG [org.springframework.web.servlet.DispatcherServlet] - GET "/admin/showName.do", parameters={}
+2019-11-18 19:59:32,395 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped to com.travel.one.four.controller.LoginController#showName(HttpSession)
+2019-11-18 19:59:32,396 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:59:32,396 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=admin, extend={})]
+2019-11-18 19:59:32,399 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 19:59:32,523 DEBUG [com.travel.one.four.mapper.TRouteMapper.findAllInfo_COUNT] - <==      Total: 1
+2019-11-18 19:59:32,525 DEBUG [com.travel.one.four.mapper.TRouteMapper.findAllInfo] - ==>  Preparing: select tr.rid, tr.rname, tr.price, tr.routeIntroduce, tr.rflag, tr.rdate,tr.cid, tr.rimage, tr.sid,tn.cname,tc.sname FROM t_nav tn left join t_route tr on tn.cid=tr.cid left join t_companydata tc on tc.sid=tr.sid LIMIT ? 
+2019-11-18 19:59:32,525 DEBUG [com.travel.one.four.mapper.TRouteMapper.findAllInfo] - ==> Parameters: 6(Integer)
+2019-11-18 19:59:32,535 DEBUG [com.travel.one.four.mapper.TRouteMapper.findAllInfo] - <==      Total: 6
+2019-11-18 19:59:32,535 DEBUG [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@761192b0]
+2019-11-18 19:59:32,536 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2019-11-18 19:59:32,536 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor] - Writing [Msg(code=100, message=成功, extend={pageInfo=PageInfo{pageNum=1, pageSize=6, size=6, startRow=1, endRo (truncated)...]
+2019-11-18 19:59:32,543 DEBUG [org.springframework.web.servlet.DispatcherServlet] - Completed 200 OK
+2019-11-18 20:00:00,528 DEBUG [org.springframework.web.context.support.XmlWebApplicationContext] - Closing WebApplicationContext for namespace 'dispatcherServlet-servlet', started on Mon Nov 18 19:56:39 CST 2019, parent: Root WebApplicationContext
+2019-11-18 20:00:00,635 DEBUG [org.springframework.web.context.support.XmlWebApplicationContext] - Closing Root WebApplicationContext, started on Mon Nov 18 19:56:34 CST 2019
+2019-11-18 20:00:00,636 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-18 20:00:00,637 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - Before shutdown stats (total=6, active=0, idle=6, waiting=0)
+2019-11-18 20:00:00,645 DEBUG [com.zaxxer.hikari.pool.PoolBase] - MyHikariCP - Closing connection com.mysql.cj.jdbc.ConnectionImpl@55c0dcf1: (connection evicted)
+2019-11-18 20:00:00,687 DEBUG [com.zaxxer.hikari.pool.PoolBase] - MyHikariCP - Closing connection com.mysql.cj.jdbc.ConnectionImpl@51187d5: (connection evicted)
+2019-11-18 20:00:00,688 DEBUG [com.zaxxer.hikari.pool.PoolBase] - MyHikariCP - Closing connection com.mysql.cj.jdbc.ConnectionImpl@442c8dee: (connection evicted)
+2019-11-18 20:00:00,688 DEBUG [com.zaxxer.hikari.pool.PoolBase] - MyHikariCP - Closing connection com.mysql.cj.jdbc.ConnectionImpl@75a20a5e: (connection evicted)
+2019-11-18 20:00:00,689 DEBUG [com.zaxxer.hikari.pool.PoolBase] - MyHikariCP - Closing connection com.mysql.cj.jdbc.ConnectionImpl@240372a1: (connection evicted)
+2019-11-18 20:00:00,689 DEBUG [com.zaxxer.hikari.pool.PoolBase] - MyHikariCP - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1d677b0a: (connection evicted)
+2019-11-18 20:00:00,690 DEBUG [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2019-11-18 20:00:00,690 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.

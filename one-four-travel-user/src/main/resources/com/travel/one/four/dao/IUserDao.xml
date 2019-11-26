@@ -3,15 +3,36 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.travel.one.four.dao.IUserDao">
-    <select id="getList" resultType="user">
+    <select id="getList" resultType="com.travel.one.four.domain.User">
         select username,password,sex,telephone,email from t_user where uid=7
     </select>
-    <update id="setPassword" parameterType="user">
+    <update id="setPassword" parameterType="com.travel.one.four.domain.User">
       update t_user
       set password=#{password}
    </update>
 
-<select id="getCollect" resultType="route">
-    select rid,rname,price,routeIntroduce,rimage from t_route  /*where rid=1 or rid =2*/
+    <select id="getCollect" resultType="com.travel.one.four.domain.Route">
+    select rid,rname,price,routeIntroduce,rimage from t_route
 </select>
+    <select id="myfavorite" resultType="com.travel.one.four.domain.Route">
+    select rname,price,routeIntroduce,rimage from t_route where rid in (select rid from t_favorite where uid=8)
+</select>
+    <insert id="saveTwoId" parameterType="com.travel.one.four.domain.Favorite">
+        insert into t_favorite(rid,uid)
+        values
+        (#{rid},#{uid})
+    </insert>
+
+
+    <select id="findByName" resultType="com.travel.one.four.domain.User">
+        select * from t_user where username = #{username}
+    </select>
+    <select id="login" resultType="com.travel.one.four.domain.User">
+        select * from t_user where username = #{username} and password = #{password}
+    </select>
+    <insert id="registerUser" parameterType="com.travel.one.four.domain.User"
+            useGeneratedKeys="true" keyColumn="uid" keyProperty="uid">
+        insert into t_user (username,password,name,birthday,sex,telephone,email,is_admin,status) values
+        (#{username},#{password},#{name},#{birthday},#{sex},#{telephone},#{email},0,Y)
+    </insert>
 </mapper>

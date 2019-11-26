@@ -1,6 +1,6 @@
 $(function () {
   /*  alert("jfjfjj")*/
-    $("#dd").load("userinfo.html");
+    $("#dd").load("head_top.html");
     $.ajax({
         url: "/list",
         type: "GET",

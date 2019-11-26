@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/flat-admin.css">
+
+    <!-- Theme -->
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/theme/blue-sky.css">
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/theme/blue.css">
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/theme/red.css">
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/theme/yellow.css">
+    <script src="static/assert/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.ajax({
+                url: "/register/show.do",
+                type: "get",
+                dataType: "json",
+                success: function (list) {
+                    var s = JSON.stringify(list);
+                    jQuery.each(JSON.parse(s), function (i, item) {
+                        var tr = '<tr><th scope="row">用户名</th><td>' + item.sname + '</td></tr>' +
+                            '<tr><th scope="row">邮箱</th><td>' + item.email + '</td></tr>' +
+                            '<tr><th scope="row">电话</th><td>' + item.consphone + '</td></tr>' +
+                            '<tr><th scope="row">地址</th><td> ' + item.address + '<td></tr>' +
+                            '<tr><th scope="row">简介</th><td> ' + item.introduction + '<td></tr>';
+                        $("#merchant_llist").append('<tbody>' + tr + '</tbody>');
+                    })
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="app app-default">
+    <aside class="app-sidebar" id="sidebar">
+        <!-- 绑定top-->
+    </aside>
+    <div class="app-container">
+        <nav class="navbar navbar-default" id="nav">
+
+        </nav>
+        <div class="row">
+            <div class="col-xs-12">
+
+                <div class="card">
+                    <div style="display: block;width: auto;height: 50px;text-align: center;font-weight:bolder;font-size: 1.5em ;padding-top: 10px">
+                        商家信息
+
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <table class="table" id="merchant_llist">
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="static/index/assets/js/vendor.js"></script>
+<script type="text/javascript" src="static/index/assets/js/app.js"></script>
+<script src="static/js/include.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.one.four.mapper.TFavoriteMapper">
+  <resultMap id="BaseResultMap" type="com.travel.one.four.domain.TFavorite">
+    <!--@mbg.generated-->
+    <!--@Table t_favorite-->
+    <id column="rid" jdbcType="INTEGER" property="rid" />
+    <id column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="date" jdbcType="DATE" property="date" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    rid, `uid`, `date`
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from t_favorite
+    where rid = #{rid,jdbcType=INTEGER}
+      and `uid` = #{uid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    <!--@mbg.generated-->
+    delete from t_favorite
+    where rid = #{rid,jdbcType=INTEGER}
+      and `uid` = #{uid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.travel.one.four.domain.TFavorite">
+    <!--@mbg.generated-->
+    insert into t_favorite (rid, `uid`, `date`)
+    values (#{rid,jdbcType=INTEGER}, #{uid,jdbcType=INTEGER}, #{date,jdbcType=DATE})
+  </insert>
+  <insert id="insertSelective" parameterType="com.travel.one.four.domain.TFavorite">
+    <!--@mbg.generated-->
+    insert into t_favorite
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="rid != null">
+        rid,
+      </if>
+      <if test="uid != null">
+        `uid`,
+      </if>
+      <if test="date != null">
+        `date`,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="rid != null">
+        #{rid,jdbcType=INTEGER},
+      </if>
+      <if test="uid != null">
+        #{uid,jdbcType=INTEGER},
+      </if>
+      <if test="date != null">
+        #{date,jdbcType=DATE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.travel.one.four.domain.TFavorite">
+    <!--@mbg.generated-->
+    update t_favorite
+    <set>
+      <if test="date != null">
+        `date` = #{date,jdbcType=DATE},
+      </if>
+    </set>
+    where rid = #{rid,jdbcType=INTEGER}
+      and `uid` = #{uid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.travel.one.four.domain.TFavorite">
+    <!--@mbg.generated-->
+    update t_favorite
+    set `date` = #{date,jdbcType=DATE}
+    where rid = #{rid,jdbcType=INTEGER}
+      and `uid` = #{uid,jdbcType=INTEGER}
+  </update>
+
+  <select id="findCount" resultType="integer">
+    select count(*) from t_favorite
+  </select>
+  <select id="findUserFav" resultType="integer">
+    select count(*) from t_favorite where uid=#{uid}
+  </select>
+
+</mapper>

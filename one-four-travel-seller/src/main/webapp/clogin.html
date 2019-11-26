@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录页面</title>
+    <script src="static/login/js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <link rel="stylesheet" href="static/login/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/login/css/materialize.min.css">
+    <link rel="stylesheet" href="static/login/css/tooplate.css">
+    <script type="text/javascript">
+        $(function () {
+            $("#login_f").click(function () {
+                var sname = $("#sname").val();
+                var password = $("#password").val();
+                $.ajax({
+                    url:"register/denglu.do",
+                    type:"post",
+                    dataType:"json",
+                    data:{
+                        sname:sname,
+                        password:password
+                    },
+                    success:function (data) {
+                        console.log(data);
+                        if(data.result == 1){
+                            location.href="BusinessInformation.html";
+                        }else if(data.result == 0){
+                            location.href="clogin.html";
+                        }
+                    },error:function () {
+                        alert("请输入帐号密码")
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+
+<body id="login">
+<div class="container">
+    <div class="row tm-register-row tm-mb-35">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 tm-login-l">
+            <form class="tm-bg-black p-5 h-100" id="bd">
+                <div class="input-field">
+                    <input placeholder="请输入用户名" id="sname"  name="sname" type="text" class="validate">
+                </div>
+                <div class="input-field mb-5">
+                    <input placeholder="请输入密码" id="password" name="password"  type="password" class="validate">
+                </div>
+                <div class="tm-flex-lr">
+                    <a href="#" class="white-text small">忘记密码?给管理员留言</a>
+                    <button type="button" class="waves-effect
+                    btn-large btn-large-white px-4 black-text rounded-0" id="login_f" value="登录">登录</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 tm-login-r">
+            <header class="font-weight-light tm-bg-black p-5 h-100">
+                <h3 class="mt-0 text-white font-weight-light">登录页面</h3>
+                <p style="line-height: 100px">欢迎登录爱自由旅游网.</p>
+                <a href="register.html"><p>没有帐号?去注册!</p></a>
+            </header>
+        </div>
+    </div>
+</div>
+</body>
+</html>

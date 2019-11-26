@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.one.four.mapper.TCompanydataMapper">
+    <resultMap id="BaseResultMap" type="com.travel.one.four.domain.TCompanydata">
+        <!--@mbg.generated-->
+        <!--@Table t_companydata-->
+        <id column="sid" jdbcType="INTEGER" property="sid"/>
+        <result column="sname" jdbcType="VARCHAR" property="sname"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+        <result column="consphone" jdbcType="VARCHAR" property="consphone"/>
+        <result column="address" jdbcType="VARCHAR" property="address"/>
+        <result column="status" jdbcType="VARCHAR" property="status"/>
+        <result column="introduction" jdbcType="VARCHAR" property="introduction"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        sid, sname, `password`, email, consphone, address, `status`, introduction
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from t_companydata
+        where sid = #{sid,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete from t_companydata
+        where sid = #{sid,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyColumn="sid" keyProperty="sid" parameterType="com.travel.one.four.domain.TCompanydata"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into t_companydata (sname, `password`, email,
+        consphone, address, `status`,
+        introduction)
+        values (#{sname,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR},
+        #{consphone,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR},
+        #{introduction,jdbcType=VARCHAR})
+    </insert>
+    <insert id="insertSelective" keyColumn="sid" keyProperty="sid"
+            parameterType="com.travel.one.four.domain.TCompanydata" useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into t_companydata
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="sname != null">
+                sname,
+            </if>
+            <if test="password != null">
+                `password`,
+            </if>
+            <if test="email != null">
+                email,
+            </if>
+            <if test="consphone != null">
+                consphone,
+            </if>
+            <if test="address != null">
+                address,
+            </if>
+            <if test="status != null">
+                `status`,
+            </if>
+            <if test="introduction != null">
+                introduction,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="sname != null">
+                #{sname,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null">
+                #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="email != null">
+                #{email,jdbcType=VARCHAR},
+            </if>
+            <if test="consphone != null">
+                #{consphone,jdbcType=VARCHAR},
+            </if>
+            <if test="address != null">
+                #{address,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=VARCHAR},
+            </if>
+            <if test="introduction != null">
+                #{introduction,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.travel.one.four.domain.TCompanydata">
+        <!--@mbg.generated-->
+        update t_companydata
+        <set>
+            <if test="sname != null">
+                sname = #{sname,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null">
+                `password` = #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="email != null">
+                email = #{email,jdbcType=VARCHAR},
+            </if>
+            <if test="consphone != null">
+                consphone = #{consphone,jdbcType=VARCHAR},
+            </if>
+            <if test="address != null">
+                address = #{address,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null">
+                `status` = #{status,jdbcType=VARCHAR},
+            </if>
+            <if test="introduction != null">
+                introduction = #{introduction,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where sid = #{sid,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.travel.one.four.domain.TCompanydata">
+        <!--@mbg.generated-->
+        update t_companydata
+        set sname = #{sname,jdbcType=VARCHAR},
+        `password` = #{password,jdbcType=VARCHAR},
+        email = #{email,jdbcType=VARCHAR},
+        consphone = #{consphone,jdbcType=VARCHAR},
+        address = #{address,jdbcType=VARCHAR},
+        `status` = #{status,jdbcType=VARCHAR},
+        introduction = #{introduction,jdbcType=VARCHAR}
+        where sid = #{sid,jdbcType=INTEGER}
+    </update>
+    <update id="stopBySid" >
+        update t_companydata
+        set status='N' where sid=#{sid}
+    </update>
+    <update id="startBySid" >
+        update t_companydata
+        set status='Y' where sid=#{sid}
+    </update>
+    <select id="findCount" resultType="int">
+        select count(*) from t_companydata
+    </select>
+
+    <select id="findAll" resultType="com.travel.one.four.domain.plus.CompanyFav">
+        select
+        tc.sid,
+        tc.sname, tc.email,
+        tc.consphone, tc.address, tc.status,
+        tc.introduction,
+        (select count(*) from t_route where sid=tc.sid) as favCount
+        from t_companydata tc
+        <where>
+            <if test="keyword!=null and keyword!=''">
+                and tc.sname like concat('%',#{keyword},'%') or
+                tc.address like concat('%',#{keyword},'%')
+            </if>
+
+        </where>
+        order by  favCount desc
+    </select>
+
+    <select id="findBySid" resultType="com.travel.one.four.domain.plus.CompanyFav">
+        select
+        tc.sid,
+        tc.sname, tc.email,
+        tc.consphone, tc.address, tc.status,
+        tc.introduction,
+        (select count(*) from t_route where sid=tc.sid) as favCount
+        from t_companydata tc where tc.sid=#{sid}
+    </select>
+    <update id="deleteBySidAndRid">
+        update t_route
+        set rflag=0 where sid=#{sid} and rid=#{rid}
+    </update>
+
+</mapper>

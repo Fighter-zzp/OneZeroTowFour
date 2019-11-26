@@ -13,6 +13,24 @@ public class UserServiceImpl implements IUserService {
     @Autowired
     private IUserDao userDao;
     @Override
+    public User findByName(String username) {
+        return userDao.findByName(username);
+    }
+
+    @Override
+    public User login(String username,String password) {
+        return userDao.login(username,password);
+    }
+
+    @Override
+    public Integer registerUser(User user) {
+        return userDao.registerUser(user);
+    }
+
+
+
+
+    @Override
     public List<User> getList() {
         return userDao.getList();
     }
@@ -27,8 +45,14 @@ public class UserServiceImpl implements IUserService {
         return userDao.getCollect();
     }
 
-   /* @Override
-    public Integer imgSet(User user) {
-        return userDao.imgSet(user);
-    }*/
+    @Override
+    public Integer saveTwoId(Integer rid, Integer uid) {
+        return userDao.saveTwoId(rid,uid);
+    }
+
+    @Override
+    public List<Route> myfavorite(Integer uid) {
+        return userDao.myfavorite(uid);
+    }
+
 }

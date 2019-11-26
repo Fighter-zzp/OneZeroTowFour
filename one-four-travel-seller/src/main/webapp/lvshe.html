@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/flat-admin.css">
+
+    <!-- Theme -->
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/theme/blue-sky.css">
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/theme/blue.css">
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/theme/red.css">
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/theme/yellow.css">
+    <script src="static/assert/js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="static/css/search.css">
+    <style>
+        .line-limit {
+            overflow:hidden;
+            text-overflow:ellipsis;
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            -webkit-line-clamp:2;
+        }
+    </style>
+</head>
+<body>
+<div class="app app-default">
+    <aside class="app-sidebar" id="sidebar"></aside>
+    <div class="app-container">
+        <nav class="navbar navbar-default" id="nav"></nav>
+        <div class="row">
+            <div class="col-xs-12">
+
+                <div class="card">
+                    <div style="display: block;width: auto;height: 50px;text-align: center;font-weight:bolder;font-size: 1.5em ;padding-top: 10px">
+                        我的旅社
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="col-md-2">
+
+                                </div>
+                                <div class="card-header">
+                                    <div class="page_one">
+                                        <div class="contant">
+                                            <div class="xinxi clearfix">
+                                                <div class="left">
+                                                    <ul id="route">
+                                                        <li>
+                                                            <div class="img"><img
+                                                                    src="img/product/small/m304b69a4c8328f7d6b8d5dadef020fe07.jpg"
+                                                                    alt=""></div>
+                                                            <div class="text1">
+                                                                <p>【减100元 含除夕/春节出发】广州增城三英温泉度假酒店/自由行套票</p>
+                                                                <br/>
+                                                                <p>1-2月出发，网付立享￥1099/2人起！爆款位置有限，抢完即止！</p>
+                                                            </div>
+                                                            <div class="price">
+                                                                <p class="price_num">
+                                                                    <span>&yen;</span>
+                                                                    <span>299</span>
+                                                                </p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="page_num_inf">
+                                                        <i></i> 共
+                                                        <span id="totalPage"></span>页<span id="totalRows"></span>条
+                                                    </div>
+                                                    <nav class="pagination">
+                                                        <ul id="pageNum">
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="static/index/assets/js/vendor.js"></script>
+<script type="text/javascript" src="static/index/assets/js/app.js"></script>
+<script src="static/js/jquery.twbsPagination.min.js"></script>
+<script type="text/javascript" src="static/js/include.js"></script>
+
+<script>
+    $(function () {
+        load(1);
+    });
+    load = function (currentPage) {
+        var data = {
+            currentPage: currentPage
+        };
+        $.ajax({
+            url: "/lvshe/list.do",
+            type: "GET",
+            data: data,
+            async: true,
+            success: function (data) {
+                var pb = data.extend.pageInfo;
+                $("#totalPage").html(pb.pages);
+                $("#totalRows").html(pb.total);
+                $("#pageNum").twbsPagination({
+                    totalPages: pb.pages || 1,
+                    startPage: pb.pageNum || 1,
+                    visiblePages: 10,
+                    first: "首页",
+                    prev: "上页",
+                    next: "下页",
+                    last: "尾页",
+                    onPageClick: function (event, page) {
+                        load(page)
+                    }
+                });
+                //列表数据展示
+                var route_lis = "";
+                var routes = pb.list;
+                for (var i = 0; i < routes.length; i++) {
+                    route_lis += '<li>\n' +
+                        '   <div class="img"><img src="static/' + routes[i].rimage + '"\n' +
+                        '       alt="..."></div>\n' +
+                        '   <div class="text1">\n' +
+                        '       <p class="line-limit">' + routes[i].rname + '</p>\n' +
+                        '           <br/>\n' +
+                        '           <p class="line-limit">' + routes[i].routeintroduce + '</p>\n' +
+                        '   </div>\n' +
+                        '   <div class="price">\n' +
+                        '   <p class="price_num">\n' +
+                        '       <span>&yen;</span>\n' +
+                        '   <span>' + routes[i].price + '</span>\n' +
+                        '   </p>\n' +
+                        '   </div>\n' +
+                        '</li>';
+                }
+                $("#route").html(route_lis);
+                document.querySelector('#pageNum').scrollTo()
+            }
+        });
+    }
+</script>
+</body>
+</html>

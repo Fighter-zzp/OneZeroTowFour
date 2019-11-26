@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>收藏</title>
+    <script src="../plugins/jquery/js/jquery-3.3.1.js"></script>
+    <script>
+
+       $(function () {
+        $("#insert_page").load("showinfo.html")
+
+            /* $("table tr:eq(5)").each(function(){
+                 var id=$(this).find('td').eq(0).html();
+                 alert(id);
+             });*/
+            /*
+
+               收藏
+             根据图片id（其实还有用户id），查询关于id的所有信息并展示
+             */
+            $.ajax({
+                url: "/myfavorite",
+                type: "GET",
+                dataType: "json",
+                success: function (da) {
+                    console.log(da)
+
+                    let str = `
+
+               `
+                    da.map(item => {
+                        str += `
+        <tbody>
+
+                <tr><th>名字</th><td>${item.rname}</td> </tr>
+                <tr><th>价格</th><td>${item.price}</td></tr>
+                <tr> <th>routeIntroduce</th> <td>${item.routeIntroduce}</td></tr>
+                <tr> <th>图片</th> <td><img src="/${item.rimage}"></td></tr>
+        </tbody>`
+                    })
+                    $('#favorite').html(str);
+
+                }
+
+            });
+       })
+    </script>
+</head>
+<body>
+<div style="display: flex;flex-direction:column"></div>
+<div id="insert_page"></div>
+<div >
+<table id="favorite">
+
+</table>
+</div>
+</body>
+</html>

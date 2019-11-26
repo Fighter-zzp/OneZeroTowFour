@@ -1,0 +1,12 @@
+document.writeln("<html>");
+document.writeln("");
+document.writeln("<script>");
+document.writeln("    var username = \'<%=session.getAttribute(\'username\')%>\';");
+document.writeln("    var uid = \'<%=session.getAttribute(\'uid\')%>\';");
+document.writeln("    ");
+document.writeln("</script>");
+document.writeln("<body>");
+document.writeln("");
+document.writeln("");
+document.writeln("</body>");
+document.writeln("</html>");

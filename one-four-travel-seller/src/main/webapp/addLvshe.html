@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加旅社</title>
+    <script src="static/assert/js/jquery-3.3.1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/flat-admin.css">
+
+    <!-- Theme -->
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/theme/blue-sky.css">
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/theme/blue.css">
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/theme/red.css">
+    <link rel="stylesheet" type="text/css" href="static/index/assets/css/theme/yellow.css">
+    <script type="text/javascript">
+        $(function () {
+            $("#insert").click(function () {
+                var rname = $("#rname").val();
+                var price = $("#price").val();
+                var routeIntroduce = $("#routeIntroduce").val();
+                var rimage = $("#rimage").val();
+                var option = $("#select").val();
+                if (option == "国内游") {
+                    cid = 5;
+                } else if (option == "全球自由行") {
+                    cid = 8;
+                } else if (option == "出境游") {
+                    cid = 4;
+                } else if (option == "抱团定制") {
+                    cid = 7;
+                } else if (option == "港澳游") {
+                    cid = 6;
+                } else if (option == "门票") {
+                    cid = 1;
+                } else if (option == "酒店") {
+                    cid = 2;
+                } else if (option == "香港车票") {
+                    cid = 3;
+                }
+                $.ajax({
+                    url: "lvshe/add.do",
+                    type: "post",
+                    dataType: "json",
+                    data: {
+                        rname: rname,
+                        price: price,
+                        routeIntroduce: routeIntroduce,
+                        rimage: rimage,
+                        cid: cid
+                    },
+                    success: function (data) {
+                        if (data.result == 1) {
+                            alert("添加成功")
+                            location.href = "index.html";
+                        } else if (data.result == 0) {
+                            alert("添加失败")
+                            location.href = "addLvshe.html"
+                        }
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="app app-default">
+    <aside class="app-sidebar" id="sidebar"></aside>
+    <div class="app-container">
+        <nav class="navbar navbar-default" id="nav"></nav>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 style="color: blue">UPDATE</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="insertForm" class="form-horizontal">
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="form-group col-md-6">
+                                    <label class="col-sm-2 control-label">标题</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" id="rname" name="rname" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="form-group col-md-6">
+                                    <label class="col-sm-2 control-label">价格</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" id="price" name="price" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="form-group col-md-6">
+                                    <label class="col-sm-2 control-label">介绍</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" id="routeIntroduce" name="routeIntroduce" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="form-group col-md-6">
+                                    <label class="col-sm-2 control-label">标签选择</label>
+                                    <div class="col-sm-10">
+                                        <select id="select">
+                                            <option id="option8">
+                                                全球自由行
+                                            </option>
+                                            <option id="option5">
+                                                国内游
+                                            </option>
+                                            <option id="option4">
+                                                出境游
+                                            </option>
+                                            <option id="option7">
+                                                抱团定制
+                                            </option>
+                                            <option id="option6">
+                                                港澳游
+                                            </option>
+                                            <option id="option2">
+                                                酒店
+                                            </option>
+                                            <option id="option1">
+                                                门票
+                                            </option>
+                                            <option id="option3">
+                                                车票
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <p></p>
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="form-group col-md-6">
+                                    <label class="col-sm-2 control-label">旅游图片</label>
+                                    <div class="col-sm-10">
+                                        <input type="file" id="rimage" name="file" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-7"></div>
+                                <div class="form-group col-md-4">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <input type="button" id="insert" class="btn btn-default" style="color: #01cd74"
+                                               value="添加">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="static/js/include.js"></script>
+<script>
+    $(function () {
+        $.ajax({
+            url: "/lvshe/navs.do",
+            type: "GET",
+            data: {},
+            async: true,
+            success: function (data) {
+                var navs = data.extend.navs;
+                list = '';
+                for (var i=0;i<navs.length;i++){
+                    list += '<option value="'+navs[i].cid+'">'+navs[i].cname+'</option>';
+                }
+                $("#select").html(list);
+            }
+       });
+    });
+    $(function () {
+        $(document).on("click","#insert",function () {
+            var formData = new FormData($("#insertForm")[0]);
+            formData.append("rname",$("#rname").val());
+            formData.append("price",$("#price").val());
+            formData.append("routeintroduce",$("#routeIntroduce").val());
+            formData.append("cid",$("#select option:selected").val());
+            formData.append("file",$("#rimage")[0].files[0]);
+            $.ajax({
+                url: '/lvshe/add.do' ,
+                type: 'post',
+                data: formData,
+                dataType: "json",
+                async: false,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success:function(data){
+                    alert("添加"+data.message)
+                }
+            });
+        });
+    })
+</script>
+</html>

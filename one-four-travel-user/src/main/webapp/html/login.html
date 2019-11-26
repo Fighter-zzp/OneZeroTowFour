@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>欢迎登录</title>
+    <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script type="text/javascript" src="../plugins/jquery/js/jquery-3.3.1.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.js"></script>
+    <script>
+        $(function () {
+            //用户输入框失去焦点时判断输入框的值是否为空
+            $("#username").blur(function () {
+                if ($.trim($("#username").val()) == "") {
+                    document.getElementById("user").innerHTML = "请输入用户名";
+                }
+            });
+            //密码输入框失去焦点时判断输入框的值是否为空
+            $("#password").blur(function () {
+                if ($.trim($("#password").val()) == "") {
+                    document.getElementById("pass").innerHTML = "请输入密码";
+                }
+            });
+
+            //提交登录请求
+            $("#checkUser").click(function () {
+                var username = $.trim($("#username").val());
+                var password = $.trim($("#password").val());
+                $.ajax({
+                    url: "/login",
+                    data: {
+                        username: username,
+                        password: password
+                    },
+                    type: "post",
+                    dataType: "json",
+                    success: function (data) {
+                        if (data.flag) {
+                            window.location.href = "home.html";
+                            localStorage.setItem("username",JSON.stringify({id:data.username}));
+                        } else {
+                            /*alert(data.msg);*/
+                            /*$("#password").append("<div><p style='font-size:30px;color:red'>密码输入错误</p></div>")*/
+                            document.getElementById("pass").innerHTML = data.msg;
+                        }
+                    }
+                });
+            })
+        })
+        ;
+
+
+    </script>
+    <style>
+        .app {
+            position: relative;
+            left: 150px;
+        }
+
+        .footer-page {
+            position: relative;
+            left: 350px;
+            top: 30px;
+
+        }
+
+        .footer-guanggao {
+            position: relative;
+            right: 350px;
+            top: 60px;
+
+        }
+
+        body {
+            /* background-color: #fff;*/
+            font-size: 12px;
+            line-height: 1.5;
+            font-family: "Hiragino Sans GB", Tahoma, arial, 宋体, sans-serif;
+            color: #404040;
+            text-align: left;
+            display: block;
+
+            overflow-x: hidden;
+            width: auto;
+            overflow-y: auto;
+
+
+        }
+
+        ::-webkit-scrollbar {
+            height: 300px;
+        }
+
+        /*.in {
+            border: 1px solid red;
+        }*/
+
+        #top_head {
+            width: auto;
+            height: 71px;
+            background-color: #fff;
+            padding: 15px 0;
+        }
+
+        #top_img img {
+            position: relative;
+            left: 100px;
+
+        }
+
+        /*#big_body {
+            width: 1101.18px;
+            height: 560px;
+        }*/
+
+        #body_img img {
+            position: relative;
+            right: 178px;
+            width: 1920px;
+            height: 560px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            top: 0px;
+
+
+        }
+
+        #body_logo {
+            width: 350px;
+            height: 400px;
+            position: absolute;
+            /*left: 900px;*/
+            left: 60%;
+            top: 200px;
+            background-color: #fff;
+        }
+
+        .logo_height {
+            height: 56.35px;
+        }
+
+        #input_body {
+            width: 350px;
+            height: 253.18px;
+        }
+
+        .in_logo {
+            width: 288.47px;
+            height: 38.59px;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+
+        #t_foot {
+            width: auto;
+            height: 100px;
+            background: #2aabd2;
+        }
+
+        #checkUser {
+            background: #f80;
+            width: 288.47px;
+            height: 38.59px;
+            margin-left: 30px;
+            margin-top: 20px;
+            position: absolute;
+            top: 300px;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="app">
+    <div style="float: left">
+        <img src="../img/header-img_03.gif">
+    </div>
+    <div style="float: left;margin-left: 30px"><p>
+        <h2>欢迎登录</h2></p></div>
+</div>
+<div id="big_body">
+    <div id="body_img">
+        <img src="../img/banner_login.jpeg" style="display: block">
+    </div>
+    <div id="body_logo">
+        <div style="display: flex; flex-direction: row">
+            <div id="click_logo" class=" logo_height" style="width: 175px;">
+                <ul>
+                    <h3>账号登录</h3>
+                </ul>
+
+            </div>
+        </div>
+        <div id="input_body" style="display: flex;flex-direction: column">
+
+            <div>
+                <input type="text" placeholder="输入账号" class="in_logo" id="username" name="username">
+                <span id="user" style="font-size:15px;color:red;margin-left: 30px;"></span>
+            </div>
+            <div>
+                <input type="password" placeholder="输入密码" class="in_logo" id="password" name="password">
+
+                <span id="pass" style="font-size:15px;color:red;margin-left: 30px;"></span>
+            </div>
+            <div id="radio_register"
+                 style="display: flex;flex-direction: row;margin-left: 230px;position: absolute;top:280px"><a
+                    href="https://www.baidu.com"><h5>>>立即注册</h5></a></div>
+
+            <button class="btn btn-default" id="checkUser" value="登录">登录</button>
+
+
+        </div>
+    </div>
+
+    <div class="footer-page">
+        <div style="float: left">
+            <p><h5>关于我们</h5></p>
+        </div>
+        <div style="float: left;margin-left: 20px">
+            <p><h5>Investor Relations</h5></p>
+        </div>
+        <div style="float: left;margin-left: 20px">
+            <p><h5>联系我们</h5></p>
+        </div>
+        <div style="float: left;margin-left: 20px">
+            <p><h5>投诉建议</h5></p>
+        </div>
+        <div style="float: left;margin-left: 20px">
+            <p><h5>广告服务</h5></p>
+        </div>
+        <div style="float: left;margin-left: 20px">
+            <p><h5>旅游券</h5></p>
+        </div>
+        <div style="float: left;margin-left: 20px">
+            <p><h5>隐私保护</h5></p>
+        </div>
+        <div style="float: left;margin-left: 20px">
+            <p><h5>免责声明</h5></p>
+        </div>
+        <div style="float: left;margin-left: 20px">
+            <p><h5>供应商合作</h5></p>
+        </div>
+        <div style="float: left;margin-left: 20px">
+            <p><h5>用户协议</h5></p>
+        </div>
+        <div style="float: left">
+            <p><h5>网站地图</h5></p>
+        </div>
+
+    </div>
+    <div class="footer-guanggao">
+        <p><h5>Copyright © 2006-2014 疯游精旅游网 Tuniu.com | 营业执照 | ICP证：苏B2-20130006 上海旅游网</h5></p>
+    </div>
+</div>
+
+</body>
+</html>

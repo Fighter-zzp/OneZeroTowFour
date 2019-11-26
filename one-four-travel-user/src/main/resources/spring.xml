@@ -47,11 +47,13 @@
                 </bean>
             </array>
         </property>
+
     </bean>
 
     <!-- 自动扫描 将Mapper接口生成代理注入到Spring -->
     <bean id="mapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.travel.one.four.dao"/>
+
     </bean>
     <!--配置Spring框架声明式事务管理-->
     <!--配置事务管理器-->
@@ -61,9 +63,18 @@
     <!--配置事务通知-->
     <tx:advice id="txAdvice" transaction-manager="transactionManager">
         <tx:attributes>
-            <tx:method name="*" read-only="false" propagation="REQUIRED"/>
-            <tx:method name="find*" read-only="true"/>
-            <tx:method name="get*" read-only="true"/>
+            <!-- 传播行为 -->
+            <tx:method name="save*" propagation="REQUIRED" read-only="false" />
+            <tx:method name="insert*" propagation="REQUIRED" read-only="false" />
+            <tx:method name="add*" propagation="REQUIRED" read-only="false" />
+            <tx:method name="create*" propagation="REQUIRED" read-only="false" />
+            <tx:method name="delete*" propagation="REQUIRED" read-only="false" />
+            <tx:method name="update*" propagation="REQUIRED" read-only="false" />
+            <tx:method name="find*" propagation="SUPPORTS" read-only="true" />
+            <tx:method name="select*" propagation="SUPPORTS" read-only="true" />
+            <tx:method name="get*" propagation="SUPPORTS" read-only="true" />
+            <tx:method name="list*" propagation="SUPPORTS" read-only="true" />
+            <tx:method name="*" propagation="SUPPORTS" read-only="true" />
         </tx:attributes>
     </tx:advice>
     <!--配置AOP增强-->

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>旅社后台</title>
+    <script src="static/assert/js/jquery-3.3.1.min.js"></script>
+    <link href="static/css/style.css" rel='stylesheet' type='text/css'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Pink Contact Form ,Login Forms,Sign up Forms,Registration Forms,News latter Forms,Elements" ./>
+    <!-- Theme -->
+    <script type="text/javascript">
+        $(function () {
+            $("#sssss").click(function () {
+                alert("您确定要提交吗");
+               var username = $("#username").val();
+               var message = $("#message").val();
+               $.ajax({
+                   url:"/addMessage",
+                   type: "post",
+                   data: {username: username,message:message},
+                   success: function (da) {
+                       if (da === 1) {
+                           alert("提交成功")
+                       } else {
+                           alert("提交失败");
+                           location.href="addMessage.html"
+                       }
+                   }, error: function () {
+                       alert("提交异常，请检查提交信息");
+                   }
+               })
+            })
+        })
+    </script>
+</head>
+<body>
+<h1>留言板</h1>
+<div class="login-01">
+    <form>
+        <ul>
+            <li class="first">
+                <p class=" icon user"></p><input type="text" id="username" class="text" value="请输入你的名字">
+                <div class="clear"></div>
+            </li>
+            <li class="second">
+                <p class=" icon msg"></p>
+                <textarea id="message" value="Message">给管理员留言</textarea>
+                <div class="clear"></div>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </form>
+    <button id="sssss" type="button">提交</button>
+</div>
+</body>
+</html>

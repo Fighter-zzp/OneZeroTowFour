@@ -9,6 +9,6 @@ public class Company {
     private String password;
     private String email;
     private String consphone;
-
     private String address;
+    private String introduction;
 }

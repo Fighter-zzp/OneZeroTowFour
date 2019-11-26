@@ -1,32 +1,42 @@
 package com.travel.one.four.domain;
 
-public class User {
+/*public class User {
     private Integer uid;
     private String username;
-    private String password;
+    private String  password;
     private String sex;
     private Integer telephone;
     private String email;
-    private String user_img;
+}*/
+
+
+import java.io.Serializable;
+import java.util.Date;
+
+public class User implements Serializable {
+    private Integer uid;
+    private String username;
+    private String password;
+    private String name;
+    private Date birthday;
+    private String sex;
+    private String telephone;
+    private String email;
+    private String is_admin;
 
     public User() {
     }
 
-    public User(String username, String password, String sex, Integer telephone, String email) {
+    public User(Integer uid, String username, String password, String name, Date birthday, String sex, String telephone, String email, String is_admin) {
+        this.uid = uid;
         this.username = username;
         this.password = password;
+        this.name = name;
+        this.birthday = birthday;
         this.sex = sex;
         this.telephone = telephone;
         this.email = email;
-    }
-
-    public User(String username, String password, String sex, Integer telephone, String email, String user_img) {
-        this.username = username;
-        this.password = password;
-        this.sex = sex;
-        this.telephone = telephone;
-        this.email = email;
-        this.user_img = user_img;
+        this.is_admin = is_admin;
     }
 
     public Integer getUid() {
@@ -53,6 +63,22 @@ public class User {
         this.password = password;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
     public String getSex() {
         return sex;
     }
@@ -61,11 +87,11 @@ public class User {
         this.sex = sex;
     }
 
-    public Integer getTelephone() {
+    public String getTelephone() {
         return telephone;
     }
 
-    public void setTelephone(Integer telephone) {
+    public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
 
@@ -77,12 +103,12 @@ public class User {
         this.email = email;
     }
 
-    public String getUser_img() {
-        return user_img;
+    public String getIs_admin() {
+        return is_admin;
     }
 
-    public void setUser_img(String user_img) {
-        this.user_img = user_img;
+    public void setIs_admin(String is_admin) {
+        this.is_admin = is_admin;
     }
 
     @Override
@@ -91,10 +117,13 @@ public class User {
                 "uid=" + uid +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", birthday=" + birthday +
                 ", sex='" + sex + '\'' +
-                ", telephone=" + telephone +
+                ", telephone='" + telephone + '\'' +
                 ", email='" + email + '\'' +
-                ", user_img='" + user_img + '\'' +
+                ", is_admin='" + is_admin + '\'' +
                 '}';
     }
 }
+

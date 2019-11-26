@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.travel.one.four.dao.CompanyDao">
+    <select id="selectBySname" resultType="com.travel.one.four.domain.Company">
+    SELECT * FROM t_companydata WHERE sname=#{sname} and password=#{password} and status='Y';
+</select>
+
+    <insert id="insertCompany">
+        INSERT INTO t_companydata (
+        `sname`,
+        `password`,
+        `email`,
+        `consphone`,
+        `address`,
+        `introduction`
+        )
+        VALUES
+        (
+        #{sname},
+        #{password},
+        #{email},
+        #{consphone},
+        #{address},
+        #{introduction}
+        )
+    </insert>
+    <select id="findAll" resultType="com.travel.one.four.domain.Company">
+        SELECT * FROM t_companydata
+    </select>
+
+    <update id="updata" >
+        update t_companydata set sname=#{sname},password=#{password},email=#{email},
+        consphone=#{consphone},address=#{address},introduction=#{introduction} where sid=#{sid};
+    </update>
+
+    <select id="show" resultType="com.travel.one.four.domain.Company">
+        select * from t_companydata where sid = #{sid} and status='Y';
+    </select>
+</mapper>

@@ -1,0 +1,143 @@
+2019-11-12 11:22:27,411 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-12 11:22:32,787 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 5374 ms
+2019-11-12 11:22:33,796 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-12 11:22:35,781 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1985 ms
+2019-11-12 11:23:12,429 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 11:23:13,145 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 11:41:10,225 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 11:41:10,276 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 11:54:31,647 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-12 11:54:34,584 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 2935 ms
+2019-11-12 11:54:36,033 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-12 11:54:37,600 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1567 ms
+2019-11-12 11:55:12,763 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 11:55:13,245 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 12:00:54,804 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 12:00:54,819 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 12:09:34,492 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-11-12 12:09:34,544 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5fa07e12, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@55b53d44, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@482bce4f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@366647c2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6a6afff2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1649b0e6, org.springframework.test.context.event.EventPublishingTestExecutionListener@865dd6]
+2019-11-12 12:09:37,230 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 12:09:37,684 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 12:09:37,871 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 12:09:37,895 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 12:10:17,736 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-11-12 12:10:17,766 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5fa07e12, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@55b53d44, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@482bce4f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@366647c2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6a6afff2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1649b0e6, org.springframework.test.context.event.EventPublishingTestExecutionListener@865dd6]
+2019-11-12 12:10:20,155 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 12:10:20,600 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 12:10:21,231 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 12:10:21,252 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 12:11:25,009 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-11-12 12:11:25,031 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5fa07e12, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@55b53d44, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@482bce4f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@366647c2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6a6afff2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1649b0e6, org.springframework.test.context.event.EventPublishingTestExecutionListener@865dd6]
+2019-11-12 12:11:27,256 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 12:11:27,698 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 12:11:28,426 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 12:11:28,598 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 13:59:00,700 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-12 13:59:03,952 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 3241 ms
+2019-11-12 13:59:05,306 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-12 13:59:06,842 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1536 ms
+2019-11-12 13:59:35,592 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 13:59:36,341 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 14:15:27,394 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 14:15:27,446 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 14:15:52,102 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-11-12 14:15:52,203 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5fa07e12, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@55b53d44, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@482bce4f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@366647c2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6a6afff2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1649b0e6, org.springframework.test.context.event.EventPublishingTestExecutionListener@865dd6]
+2019-11-12 14:15:56,039 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 14:15:56,508 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 14:15:57,051 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 14:15:57,105 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 14:20:00,782 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-12 14:20:04,001 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 3218 ms
+2019-11-12 14:20:05,419 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-12 14:20:07,339 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1920 ms
+2019-11-12 14:20:32,499 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 14:20:33,060 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 14:24:41,981 WARN [com.zaxxer.hikari.pool.HikariPool] - MyHikariCP - Thread starvation or clock leap detected (housekeeper delta=4m8s819ms492µs400ns).
+2019-11-12 14:24:45,689 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 14:24:45,705 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 14:28:17,924 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-12 14:28:21,708 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 3784 ms
+2019-11-12 14:28:23,353 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-12 14:28:25,380 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 2027 ms
+2019-11-12 14:28:48,621 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 14:28:49,195 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 14:33:26,997 WARN [org.springframework.web.servlet.PageNotFound] - No mapping for GET /pages/duser.do
+2019-11-12 14:33:31,538 WARN [org.springframework.web.servlet.PageNotFound] - No mapping for GET /pages/duser.do
+2019-11-12 14:44:36,219 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 14:44:36,223 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 15:09:36,249 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-12 15:09:39,146 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 2896 ms
+2019-11-12 15:09:40,490 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-12 15:09:41,870 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1380 ms
+2019-11-12 15:10:11,441 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 15:10:11,973 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 15:16:29,283 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 15:16:29,301 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 17:18:08,531 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-12 17:18:11,644 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 3112 ms
+2019-11-12 17:18:13,077 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-12 17:18:14,665 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1587 ms
+2019-11-12 17:18:42,695 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 17:18:43,228 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 17:46:25,532 WARN [org.springframework.web.servlet.PageNotFound] - No mapping for GET /pages/company.do
+2019-11-12 17:58:39,822 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 17:58:39,825 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 17:59:06,915 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-12 17:59:10,030 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 3115 ms
+2019-11-12 17:59:11,395 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-12 17:59:12,927 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1532 ms
+2019-11-12 17:59:41,994 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 17:59:42,525 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 18:00:03,603 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 18:00:03,619 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 19:43:58,804 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-12 19:44:02,139 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 3332 ms
+2019-11-12 19:44:03,523 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-12 19:44:05,089 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1566 ms
+2019-11-12 19:44:35,187 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 19:44:35,839 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 20:04:14,961 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 20:04:15,022 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 20:04:48,087 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-12 20:04:53,291 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 5202 ms
+2019-11-12 20:04:54,601 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-12 20:04:56,088 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1486 ms
+2019-11-12 20:05:32,521 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 20:05:32,996 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 20:10:07,059 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 20:10:07,099 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 20:43:03,561 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-11-12 20:43:03,618 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@482bce4f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@366647c2, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6a6afff2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1649b0e6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@865dd6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4da4253, org.springframework.test.context.event.EventPublishingTestExecutionListener@3972a855]
+2019-11-12 20:43:06,856 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 20:43:07,279 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 20:43:07,528 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 20:43:07,547 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 21:17:16,781 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-12 21:17:20,587 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 3805 ms
+2019-11-12 21:17:22,287 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-12 21:17:24,073 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1786 ms
+2019-11-12 21:18:09,289 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 21:18:09,824 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 21:26:34,124 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 21:26:34,145 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 21:35:47,321 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-11-12 21:35:47,345 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6a6afff2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1649b0e6, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@865dd6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4da4253, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3972a855, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@62e7f11d, org.springframework.test.context.event.EventPublishingTestExecutionListener@503d687a]
+2019-11-12 21:35:49,937 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 21:35:50,324 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 21:35:50,375 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 21:35:50,397 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 21:36:16,365 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-11-12 21:36:16,385 INFO [org.springframework.test.context.support.DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6a6afff2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1649b0e6, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@865dd6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4da4253, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3972a855, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@62e7f11d, org.springframework.test.context.event.EventPublishingTestExecutionListener@503d687a]
+2019-11-12 21:36:19,099 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 21:36:19,614 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 21:36:19,851 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 21:36:19,888 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.
+2019-11-12 21:46:56,562 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-11-12 21:46:59,463 INFO [org.springframework.web.context.ContextLoader] - Root WebApplicationContext initialized in 2900 ms
+2019-11-12 21:47:00,810 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-11-12 21:47:02,212 INFO [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1402 ms
+2019-11-12 21:47:37,364 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Starting...
+2019-11-12 21:47:37,860 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Start completed.
+2019-11-12 21:50:02,717 WARN [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-11-12 22:02:47,957 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown initiated...
+2019-11-12 22:02:47,976 INFO [com.zaxxer.hikari.HikariDataSource] - MyHikariCP - Shutdown completed.

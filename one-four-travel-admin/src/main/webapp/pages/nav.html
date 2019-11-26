@@ -1,0 +1,54 @@
+<!--<nav class="side-navbar">-->
+    <!-- Sidebar Header-->
+    <div class="sidebar-header d-flex align-items-center">
+        <div class="avatar"><img src="static/img/tou.jpg" alt="..." class="img-fluid rounded-circle"></div>
+        <div class="title">
+            <h1 class="h4"><span id="userName">1+1</span></h1>
+            <p>一个使用后台的帅哥</p>
+        </div>
+    </div>
+    <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
+    <ul class="list-unstyled" id="nav">
+        <li class="active"><a href="index.html"> <i class="icon-home"></i>Home </a></li>
+        <li><a href="user.html"> <i class="icon-grid"></i>用户管理 </a></li>
+        <li><a href="company.html"> <i class="fa fa-bar-chart"></i>旅社管理</a></li>
+        <li><a href="#routeDropdown" aria-expanded="false" data-toggle="collapse">
+            <i class="icon-interface-windows"></i>路线管理</a>
+            <ul id="routeDropdown" class="collapse list-unstyled ">
+                <li><a href="navManage.html">导航栏管理</a></li>
+                <li><a href="route.html">路线管理</a></li>
+            </ul>
+        </li>
+    </ul>
+<!--</nav>-->
+<script>
+    function check(name) {
+        var pathName=window.document.location.pathname;
+        return pathName.indexOf(name)>0;
+    }
+
+    $(function () {
+        $("#nav li").each(function () {
+            $(this).removeClass("active");
+            var href = $(this).children("a").attr("href");
+            var flag = check(href);
+            if (flag){
+                //alert(href+":"+flag);
+                $(this).attr("Class","active")
+            }
+        });
+
+        $.ajax({
+            url: "/admin/showName.do",
+            data: {},
+            async:true,
+            success: function (data) {
+                if (data.code===100){
+                    $("#userName").html(data.message);
+                }else {
+                    location.href="/pages/login.html"
+                }
+            }
+        });
+    });
+</script>

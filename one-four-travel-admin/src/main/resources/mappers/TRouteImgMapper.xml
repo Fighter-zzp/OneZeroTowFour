@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.one.four.mapper.TRouteImgMapper">
+  <resultMap id="BaseResultMap" type="com.travel.one.four.domain.TRouteImg">
+    <!--@mbg.generated-->
+    <!--@Table t_route_img-->
+    <id column="rgid" jdbcType="INTEGER" property="rgid" />
+    <result column="rid" jdbcType="INTEGER" property="rid" />
+    <result column="bigPic" jdbcType="VARCHAR" property="bigpic" />
+    <result column="smallPic" jdbcType="VARCHAR" property="smallpic" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    rgid, rid, bigPic, smallPic
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from t_route_img
+    where rgid = #{rgid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--@mbg.generated-->
+    delete from t_route_img
+    where rgid = #{rgid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="rgid" keyProperty="rgid" parameterType="com.travel.one.four.domain.TRouteImg" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into t_route_img (rid, bigPic, smallPic
+      )
+    values (#{rid,jdbcType=INTEGER}, #{bigpic,jdbcType=VARCHAR}, #{smallpic,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="rgid" keyProperty="rgid" parameterType="com.travel.one.four.domain.TRouteImg" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into t_route_img
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="rid != null">
+        rid,
+      </if>
+      <if test="bigpic != null">
+        bigPic,
+      </if>
+      <if test="smallpic != null">
+        smallPic,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="rid != null">
+        #{rid,jdbcType=INTEGER},
+      </if>
+      <if test="bigpic != null">
+        #{bigpic,jdbcType=VARCHAR},
+      </if>
+      <if test="smallpic != null">
+        #{smallpic,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.travel.one.four.domain.TRouteImg">
+    <!--@mbg.generated-->
+    update t_route_img
+    <set>
+      <if test="rid != null">
+        rid = #{rid,jdbcType=INTEGER},
+      </if>
+      <if test="bigpic != null">
+        bigPic = #{bigpic,jdbcType=VARCHAR},
+      </if>
+      <if test="smallpic != null">
+        smallPic = #{smallpic,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where rgid = #{rgid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.travel.one.four.domain.TRouteImg">
+    <!--@mbg.generated-->
+    update t_route_img
+    set rid = #{rid,jdbcType=INTEGER},
+      bigPic = #{bigpic,jdbcType=VARCHAR},
+      smallPic = #{smallpic,jdbcType=VARCHAR}
+    where rgid = #{rgid,jdbcType=INTEGER}
+  </update>
+  <select id="findByRid" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from t_route_img where rid=#{rid}
+  </select>
+</mapper>

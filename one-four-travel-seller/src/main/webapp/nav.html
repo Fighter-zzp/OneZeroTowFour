@@ -1,0 +1,65 @@
+<div class="container-fluid">
+    <div class="navbar-collapse collapse in">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown profile">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                    <img class="profile-img" src="static/index/assets/images/profile.png">
+                    <div class="title">Profile</div>
+                </a>
+                <div class="dropdown-menu">
+                    <div class="profile-info">
+                        <h4 class="username">商家: <span id="comName"></span></h4>
+                    </div>
+                    <ul class="action">
+                        <li>
+                            <a href="BusinessInformation.html">
+                                个人信息
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                个人信息修改
+                            </a>
+                        </li>
+                        <li>
+                            <a id="logout">
+                                注销
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("#logout").click(function () {
+            $.ajax({
+                url:"/register/logout.do",
+                type:"post",
+                dataType:"json",
+                success:function (data) {
+                    if(data.result === 1){
+                        location.href="clogin.html";
+                    }else{
+                        alert("注销失败");
+                    }
+                }
+            })
+        });
+        $.ajax({
+            url: "/register/showName.do",
+            type:"GET",
+            data: {},
+            async:true,
+            success: function (data) {
+                if (data.code===100){
+                    $("#comName").html(data.extend.login.sname);
+                }else {
+                    location.href="/clogin.html"
+                }
+            }
+        });
+    })
+</script>
